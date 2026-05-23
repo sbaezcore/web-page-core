@@ -14,7 +14,7 @@ export default function HomeContent() {
 
         {/* Headline (SEO H1) */}
         <h1 className="leading-none mb-8 flex flex-col items-center">
-          <span className="block font-raleway font-thin text-[32px] text-black mb-2">
+          <span className="block font-raleway font-medium text-[32px] text-black mb-2">
             Build your team. Run your operations.
           </span>
           <span className="block font-raleway font-bold text-[36px] text-[#560FF3] tracking-normal">
@@ -60,7 +60,7 @@ export default function HomeContent() {
             </div>
 
             <div className="relative z-10 w-full md:w-[70%] flex flex-col h-full pt-44 md:pt-0 items-center md:items-start">
-              <h3 className="font-raleway font-thin text-[36px] md:text-[43px] leading-none mb-4 text-black uppercase">
+              <h3 className="font-raleway font-medium text-[36px] md:text-[43px] leading-none mb-4 text-black uppercase">
                 BUILD YOUR<br /><span className="group-hover:text-[#560FF3] transition-colors  font-bold duration-500">TEAM</span>
               </h3>
               <p className="text-black font-medium text-sm leading-relaxed mb-6 max-w-sm md:max-w-none">
@@ -116,7 +116,7 @@ export default function HomeContent() {
             </div>
 
             <div className="relative z-10 w-full md:w-[70%] ml-auto flex flex-col h-full pt-44 md:pt-0 items-center md:items-end">
-              <h3 className="font-raleway font-thin text-[36px] md:text-[43px] leading-none mb-4 text-black uppercase">
+              <h3 className="font-raleway font-medium text-[36px] md:text-[43px] leading-none mb-4 text-black uppercase">
                 RUN YOUR<br /><span className="group-hover:text-[#560FF3] font-bold transition-colors duration-500">OPERATIONS</span>
               </h3>
               <p className="text-black font-medium text-sm leading-relaxed mb-6 max-w-sm md:max-w-none">
