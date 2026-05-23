@@ -159,6 +159,7 @@ export default function BuildTeamsContent() {
               alt="Modern desk with compliance certificate"
               className="object-cover group-hover:scale-105 transition-transform duration-700"
               fill={true}
+              sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 33vw"
               src="https://lh3.googleusercontent.com/aida-public/AB6AXuANEYsEheBCSR4Dacf0SBPlZmKFNxBOlKAaQybUo1T9YoCRJ11zJyHtBoS6kyhXeU3Cl5vnQN6FFkAq4R2oyj2wyL5vqIxEQl3HOIUdI27BUI3_Qp-t-xTMHpMvlW38verQPbFbWc_SC2gtyU7SjZnWc0YfaqI5cYF6D5b8O1HDOGJAlmbBB50aJRjvSeImFEqSKjL5XDoJyCmV0cJGEHLHx-ZRn9Tvp6rWn7i4FE8wRIoqh6Mik9FeewijEiTKtp8lOhMQyYHekZk"
             />
             <div className="absolute inset-0 bg-gradient-to-t from-inverse-surface/90 via-inverse-surface/40 to-transparent flex flex-col justify-end p-8">

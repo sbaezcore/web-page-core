@@ -1,1 +1,20 @@
-/* Globals css empty since we use Tailwind CDN in layout.tsx */
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+body {
+  font-family: 'Inter', sans-serif;
+  background-color: #fafafa;
+  background-image: url('/images/fondoescritorio.webp');
+  background-size: cover;
+  background-attachment: fixed;
+  background-position: center;
+}
+
+.bg-network-pattern {
+  position: absolute;
+  inset: 0;
+  z-index: -1;
+  opacity: 0.3;
+  background-image: url('data:image/svg+xml;utf8,<svg width="100%" height="100%" xmlns="http://www.w3.org/2000/svg"><defs><pattern id="dots" x="0" y="0" width="100" height="100" patternUnits="userSpaceOnUse"><circle fill="%23ccc" cx="50" cy="50" r="2"></circle><path stroke="%23eee" stroke-width="1" d="M0 0 L100 100 M100 0 L0 100"></path></pattern></defs><rect x="0" y="0" width="100%" height="100%" fill="url(%23dots)"></rect></svg>');
+}

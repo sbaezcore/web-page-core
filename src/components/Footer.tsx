@@ -2,41 +2,51 @@ import Link from 'next/link';
 
 export default function Footer() {
   return (
-    <footer className="bg-surface-container-low dark:bg-inverse-surface w-full py-16">
-      <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-gutter px-margin-mobile md:px-margin-desktop max-w-[1440px] mx-auto">
-        <div className="flex flex-col gap-4">
-          <span className="font-headline-md text-headline-md font-bold text-primary dark:text-primary-fixed-dim">Core Resources</span>
-          <p className="font-body-md text-body-md text-secondary dark:text-secondary-fixed-dim max-w-xs mt-2">
-            Empowering global teams with frictionless talent solutions across Latin America.
+    <footer className="mt-20 px-4 pb-4">
+      <div className="max-w-7xl mx-auto bg-black text-white rounded-3xl overflow-hidden font-raleway font-medium text-[20px]">
+        {/* Footer Top CTA */}
+        <div className="text-center py-16 px-8 border-b border-white">
+          <h2 className="text-4xl font-bold mb-4">Ready to scale your business?</h2>
+          <p className="text-white mb-8 max-w-3xl mx-auto">
+            Whether you need to build your dream team or optimize your back-office operations, we are here to support your growth.
           </p>
+          <Link className="inline-block bg-gradient-to-r from-[#450CC2] to-[#2827E5] hover:from-[#560FF3] hover:to-[#560FF3] text-white px-8 py-3 rounded-lg font-bold hover:scale-105 transform transition-all duration-300 shadow-md origin-center" href="https://calendly.com/alejandro-torres-thecoreresources/30min?month=2026-05" target="_blank" rel="noopener noreferrer">
+            Book a Consultation
+          </Link>
         </div>
-        <div className="flex flex-col gap-4">
-          <h4 className="font-label-bold text-on-background dark:text-surface uppercase tracking-wider mb-2">Legal</h4>
-          <Link className="font-body-md text-body-md text-secondary dark:text-secondary-fixed-dim hover:text-primary dark:hover:text-primary-fixed-dim underline decoration-2 underline-offset-4 transition-all duration-300 w-fit" href="/privacy">Privacy Policy</Link>
-          <Link className="font-body-md text-body-md text-secondary dark:text-secondary-fixed-dim hover:text-primary dark:hover:text-primary-fixed-dim underline decoration-2 underline-offset-4 transition-all duration-300 w-fit" href="/terms">Terms of Service</Link>
-        </div>
-        <div className="flex flex-col gap-4">
-          <h4 className="font-label-bold text-on-background dark:text-surface uppercase tracking-wider mb-2">Company</h4>
-          <Link className="font-body-md text-body-md text-secondary dark:text-secondary-fixed-dim hover:text-primary dark:hover:text-primary-fixed-dim underline decoration-2 underline-offset-4 transition-all duration-300 w-fit" href="/about">About Us</Link>
-          <Link className="font-body-md text-body-md text-secondary dark:text-secondary-fixed-dim hover:text-primary dark:hover:text-primary-fixed-dim underline decoration-2 underline-offset-4 transition-all duration-300 w-fit" href="/careers">Careers</Link>
-          <Link className="font-body-md text-body-md text-secondary dark:text-secondary-fixed-dim hover:text-primary dark:hover:text-primary-fixed-dim underline decoration-2 underline-offset-4 transition-all duration-300 w-fit" href="/contact">Contact Us</Link>
-        </div>
-        <div className="flex flex-col gap-4">
-          <h4 className="font-label-bold text-on-background dark:text-surface uppercase tracking-wider mb-2">Connect</h4>
-          <a className="font-body-md text-body-md text-secondary dark:text-secondary-fixed-dim hover:text-primary dark:hover:text-primary-fixed-dim underline decoration-2 underline-offset-4 transition-all duration-300 w-fit flex items-center gap-2" href="#">
-            <span className="material-symbols-outlined text-sm">open_in_new</span> LinkedIn
-          </a>
-          <a className="font-body-md text-body-md text-secondary dark:text-secondary-fixed-dim hover:text-primary dark:hover:text-primary-fixed-dim underline decoration-2 underline-offset-4 transition-all duration-300 w-fit flex items-center gap-2" href="#">
-            <span className="material-symbols-outlined text-sm">open_in_new</span> Twitter
-          </a>
-        </div>
-        <div className="col-span-1 md:col-span-2 lg:col-span-4 mt-12 pt-8 border-t border-outline-variant/30 flex flex-col md:flex-row justify-between items-center gap-4">
-          <p className="font-body-md text-body-md text-secondary dark:text-secondary-fixed-dim">
-            © 2024 Core Resources. All rights reserved.
-          </p>
-          <button className="bg-surface border border-outline-variant px-4 py-2 rounded-lg text-sm font-label-bold text-on-surface hover:bg-surface-variant transition-colors flex items-center gap-2 shadow-sm">
-            <span className="material-symbols-outlined text-base">language</span> English (US)
-          </button>
+        {/* Footer Links Area */}
+        <div className="py-12 px-12 md:px-24 grid grid-cols-1 md:grid-cols-3 gap-12">
+          {/* Pages Column */}
+          <div>
+            <h4 className="font-bold uppercase tracking-wider text-white mb-4 border-b-2 border-white pb-2 block">PAGES</h4>
+            <ul className="space-y-4 text-white">
+              <li><Link href="/">Home</Link></li>
+              <li><Link href="/about">About Core</Link></li>
+              <li><Link href="/contact">Contact</Link></li>
+              <li><Link href="/privacy">Privacy Policy</Link></li>
+              <li><Link href="/terms">Terms of Service</Link></li>
+            </ul>
+          </div>
+          {/* Services Column */}
+          <div>
+            <h4 className="font-bold uppercase tracking-wider text-white mb-4 border-b-2 border-white pb-2 block">SERVICES</h4>
+            <ul className="space-y-4 text-white">
+              <li><Link href="/buildTeams">Build Your Team</Link></li>
+              <li><Link href="/runOperations">Run Your Operations</Link></li>
+            </ul>
+          </div>
+          {/* Social Networks Column */}
+          <div>
+            <h4 className="font-bold uppercase tracking-wider text-white mb-4 border-b-2 border-white pb-2 block">SOCIAL NETWORKS</h4>
+            <div className="flex space-x-4">
+              <a className="text-white hover:scale-110 transform transition-transform" href="#" target="_blank" rel="noopener noreferrer">
+                <i className="ph ph-instagram-logo text-[40px]"></i>
+              </a>
+              <a className="text-white hover:scale-110 transform transition-transform" href="#" target="_blank" rel="noopener noreferrer">
+                <i className="ph ph-facebook-logo text-[40px]"></i>
+              </a>
+            </div>
+          </div>
         </div>
       </div>
     </footer>
