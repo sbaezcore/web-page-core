@@ -1,4 +1,5 @@
 import Link from 'next/link';
+import { FiInstagram, FiFacebook } from 'react-icons/fi';
 
 export default function Footer() {
   return (
@@ -39,11 +40,11 @@ export default function Footer() {
           <div>
             <h4 className="font-bold uppercase tracking-wider text-white mb-4 border-b-2 border-white pb-2 block">SOCIAL NETWORKS</h4>
             <div className="flex space-x-4">
-              <a className="text-white hover:scale-110 transform transition-transform" href="#" target="_blank" rel="noopener noreferrer">
-                <i className="ph ph-instagram-logo text-[40px]"></i>
+              <a href="#" className="text-gray-400 hover:text-white transition-colors">
+                <FiInstagram size={40} />
               </a>
-              <a className="text-white hover:scale-110 transform transition-transform" href="#" target="_blank" rel="noopener noreferrer">
-                <i className="ph ph-facebook-logo text-[40px]"></i>
+              <a href="#" className="text-gray-400 hover:text-white transition-colors">
+                <FiFacebook size={40} />
               </a>
             </div>
           </div>

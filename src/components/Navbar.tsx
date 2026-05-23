@@ -1,6 +1,7 @@
 "use client";
 import Link from 'next/link';
 import Image from 'next/image';
+import { Menu, XCircle } from 'lucide-react';
 import { useState, useEffect } from 'react';
 
 export default function Navbar() {
@@ -50,10 +51,10 @@ export default function Navbar() {
 
             {/* Hamburger Button - Visible only on mobile */}
             <button 
-              className="md:hidden text-[#181789] focus:outline-none" 
+              className="md:hidden text-[#181789] focus:outline-none flex items-center justify-center" 
               onClick={() => setIsMobileMenuOpen(true)}
             >
-              <i className="ph ph-list text-3xl"></i>
+              <Menu size={32} />
             </button>
           </div>
         </header>
@@ -63,10 +64,10 @@ export default function Navbar() {
       {isMobileMenuOpen && (
         <div className="fixed inset-0 z-[100] bg-[#474747] bg-opacity-[0.97] flex flex-col items-center justify-center transition-opacity duration-300">
           <button 
-            className="absolute top-8 right-8 text-white p-2 hover:scale-110 transition-transform"
+            className="absolute top-8 right-8 text-white p-2 hover:scale-110 transition-transform flex items-center justify-center"
             onClick={() => setIsMobileMenuOpen(false)}
           >
-            <i className="ph ph-x-circle text-4xl"></i>
+            <XCircle size={40} />
           </button>
 
           <nav className="flex flex-col items-center space-y-10 text-white font-raleway text-[22px] font-light">

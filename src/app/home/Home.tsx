@@ -1,5 +1,6 @@
 import Link from 'next/link';
 import Image from 'next/image';
+import { Globe, User, TrendingUp, Briefcase, Laptop, ShieldCheck, UserCircle, CheckCircle } from 'lucide-react';
 
 export default function HomeContent() {
   return (
@@ -55,7 +56,7 @@ export default function HomeContent() {
           {/* Service Card 1: Build Your Team */}
           <div className="flex flex-col relative group min-h-[450px] p-8 bg-transparent overflow-hidden rounded-3xl items-center text-center md:items-start md:text-left">
             <div className="absolute top-0 left-0 w-full h-[55%] md:h-full md:w-[65%] md:left-auto md:right-0 grayscale group-hover:grayscale-0 transition-all duration-500 rounded-t-3xl md:rounded-t-none md:rounded-r-3xl [mask-image:linear-gradient(to_bottom,black_40%,transparent_100%)] md:[mask-image:linear-gradient(to_right,transparent_0%,black_85%)] -z-10">
-              <Image alt="Global Map" src="/images/mapa.webp" fill className="object-cover" />
+              <Image alt="Global Map" src="/images/mapa.webp" fill className="object-cover" sizes="(max-width: 768px) 100vw, 50vw" />
             </div>
 
             <div className="relative z-10 w-full md:w-[70%] flex flex-col h-full pt-44 md:pt-0 items-center md:items-start">
@@ -111,7 +112,7 @@ export default function HomeContent() {
           {/* Service Card 2: Run Your Operations */}
           <div className="flex flex-col relative group min-h-[450px] p-8 bg-transparent overflow-hidden rounded-3xl items-center text-center md:items-end md:text-right">
             <div className="absolute top-0 left-0 w-full h-[55%] md:h-full md:w-[65%] md:right-auto md:left-0 grayscale group-hover:grayscale-0 transition-all duration-500 rounded-t-3xl md:rounded-t-none md:rounded-l-3xl [mask-image:linear-gradient(to_bottom,black_40%,transparent_100%)] md:[mask-image:linear-gradient(to_left,transparent_0%,black_85%)] -z-10">
-              <Image alt="Laptop Dashboard" src="/images/dashboard.webp" fill className="object-cover" />
+              <Image alt="Laptop Dashboard" src="/images/dashboard.webp" fill className="object-cover" sizes="(max-width: 768px) 100vw, 50vw" />
             </div>
 
             <div className="relative z-10 w-full md:w-[70%] ml-auto flex flex-col h-full pt-44 md:pt-0 items-center md:items-end">
@@ -180,25 +181,25 @@ export default function HomeContent() {
                 <circle cx="200" cy="200" fill="none" r="100" stroke="currentColor" strokeDasharray="4 4" strokeWidth="1"></circle>
               </svg>
               <div className="w-32 h-32 md:w-40 md:h-40 bg-[#560FF3] text-white rounded-full flex items-center justify-center relative z-10 shadow-xl transition-all duration-500 group-hover:scale-110 group-hover:bg-opacity-80">
-                <i className="ph ph-globe text-[5rem] md:text-[6.5rem]"></i>
+                <Globe className="w-20 h-20 md:w-28 md:h-28" strokeWidth={1.5} />
               </div>
               <div className="absolute top-[15%] left-[15%] w-16 h-16 md:w-20 md:h-20 bg-[#560FF3] text-white rounded-full flex items-center justify-center shadow-lg transition-all duration-700 transform -translate-x-1/2 -translate-y-1/2 group-hover:-translate-x-1/4 group-hover:-translate-y-1/4 group-hover:scale-110 group-hover:bg-opacity-80">
-                <i className="ph ph-user text-4xl md:text-5xl"></i>
+                <User className="w-8 h-8 md:w-10 md:h-10" strokeWidth={2} />
               </div>
               <div className="absolute top-[15%] right-[15%] w-16 h-16 md:w-20 md:h-20 bg-[#560FF3] text-white rounded-full flex items-center justify-center shadow-lg transition-all duration-700 transform translate-x-1/2 -translate-y-1/2 group-hover:translate-x-1/4 group-hover:-translate-y-1/4 group-hover:scale-110 group-hover:bg-opacity-80">
-                <i className="ph ph-chart-line-up text-4xl md:text-5xl"></i>
+                <TrendingUp className="w-8 h-8 md:w-10 md:h-10" strokeWidth={2} />
               </div>
               <div className="absolute top-1/2 left-[5%] md:left-[5%] w-20 h-20 md:w-24 md:h-24 bg-[#560FF3] text-white rounded-full flex items-center justify-center shadow-lg transition-all duration-700 transform -translate-x-1/2 -translate-y-1/2 group-hover:-translate-x-1/4 group-hover:-translate-y-1/2 group-hover:scale-110 group-hover:bg-opacity-80 border-4 border-white">
-                <i className="ph ph-suitcase text-5xl md:text-6xl"></i>
+                <Briefcase className="w-10 h-10 md:w-12 md:h-12" strokeWidth={2} />
               </div>
               <div className="absolute top-1/2 right-[5%] md:right-[5%] w-16 h-16 md:w-20 md:h-20 bg-[#560FF3] text-white rounded-full flex items-center justify-center shadow-lg transition-all duration-700 transform translate-x-1/2 -translate-y-1/2 group-hover:translate-x-1/4 group-hover:-translate-y-1/2 group-hover:scale-110 group-hover:bg-opacity-80">
-                <i className="ph ph-laptop text-4xl md:text-5xl"></i>
+                <Laptop className="w-8 h-8 md:w-10 md:h-10" strokeWidth={2} />
               </div>
               <div className="absolute bottom-[15%] left-[15%] w-16 h-16 md:w-20 md:h-20 bg-[#560FF3] text-white rounded-full flex items-center justify-center shadow-lg transition-all duration-700 transform -translate-x-1/2 translate-y-1/2 group-hover:-translate-x-1/4 group-hover:translate-y-1/4 group-hover:scale-110 group-hover:bg-opacity-80">
-                <i className="ph ph-shield-check text-4xl md:text-5xl"></i>
+                <ShieldCheck className="w-8 h-8 md:w-10 md:h-10" strokeWidth={2} />
               </div>
               <div className="absolute bottom-[15%] right-[15%] w-16 h-16 md:w-20 md:h-20 bg-[#560FF3] text-white rounded-full flex items-center justify-center shadow-lg transition-all duration-700 transform translate-x-1/2 translate-y-1/2 group-hover:translate-x-1/4 group-hover:translate-y-1/4 group-hover:scale-110 group-hover:bg-opacity-80">
-                <i className="ph ph-user-circle text-4xl md:text-5xl"></i>
+                <UserCircle className="w-8 h-8 md:w-10 md:h-10" strokeWidth={2} />
               </div>
             </div>
 
@@ -264,35 +265,35 @@ export default function HomeContent() {
           <h3 className="font-raleway font-bold text-3xl mb-8 text-black">Pain points we solve:</h3>
           <ul className="space-y-5">
             <li className="flex items-start gap-4">
-              <i className="ph ph-check-circle text-core-purple text-2xl mt-0.5"></i>
+              <CheckCircle className="text-core-purple w-6 h-6 mt-0.5 shrink-0" />
               <span className="text-black font-medium">High hiring costs in the U.S.</span>
             </li>
             <li className="flex items-start gap-4">
-              <i className="ph ph-check-circle text-core-purple text-2xl mt-0.5"></i>
+              <CheckCircle className="text-core-purple w-6 h-6 mt-0.5 shrink-0" />
               <span className="text-black font-medium">Difficulty finding qualified talent.</span>
             </li>
             <li className="flex items-start gap-4">
-              <i className="ph ph-check-circle text-core-purple text-2xl mt-0.5"></i>
+              <CheckCircle className="text-core-purple w-6 h-6 mt-0.5 shrink-0" />
               <span className="text-black font-medium">Temporary, project-based or long-term hiring needs.</span>
             </li>
             <li className="flex items-start gap-4">
-              <i className="ph ph-check-circle text-core-purple text-2xl mt-0.5"></i>
+              <CheckCircle className="text-core-purple w-6 h-6 mt-0.5 shrink-0" />
               <span className="text-black font-medium">Too much administrative workload.</span>
             </li>
             <li className="flex items-start gap-4">
-              <i className="ph ph-check-circle text-core-purple text-2xl mt-0.5"></i>
+              <CheckCircle className="text-core-purple w-6 h-6 mt-0.5 shrink-0" />
               <span className="text-black font-medium">Messy bookkeeping, payroll or back-office processes.</span>
             </li>
             <li className="flex items-start gap-4">
-              <i className="ph ph-check-circle text-core-purple text-2xl mt-0.5"></i>
+              <CheckCircle className="text-core-purple w-6 h-6 mt-0.5 shrink-0" />
               <span className="text-black font-medium">Contractor payment complexity.</span>
             </li>
             <li className="flex items-start gap-4">
-              <i className="ph ph-check-circle text-core-purple text-2xl mt-0.5"></i>
+              <CheckCircle className="text-core-purple w-6 h-6 mt-0.5 shrink-0" />
               <span className="text-black font-medium">Owners spending time on operations instead of growth.</span>
             </li>
             <li className="flex items-start gap-4">
-              <i className="ph ph-check-circle text-core-purple text-2xl mt-0.5"></i>
+              <CheckCircle className="text-core-purple w-6 h-6 mt-0.5 shrink-0" />
               <span className="text-black font-medium">Need for more support without building a full internal team.</span>
             </li>
           </ul>

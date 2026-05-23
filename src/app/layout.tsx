@@ -30,7 +30,6 @@ export default function RootLayout({
   return (
     <html lang="en" className={`${inter.variable} ${raleway.variable}`}>
       <body className="font-sans text-gray-900 relative antialiased min-h-screen flex flex-col">
-        <Script src="https://unpkg.com/@phosphor-icons/web" strategy="lazyOnload" />
         <Navbar />
         {children}
         <Footer />
