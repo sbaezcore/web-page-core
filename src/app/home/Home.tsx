@@ -1,4 +1,5 @@
 import Link from 'next/link';
+import Image from 'next/image';
 
 export default function HomeContent() {
   return (
@@ -7,7 +8,7 @@ export default function HomeContent() {
       <section className="text-center pt-20 pb-16 px-4 relative z-10 max-w-6xl mx-auto">
         {/* Large Logo */}
         <div className="flex justify-center mb-10">
-          <img src="/images/corelogo.png" alt="Core Resources Logo" className="h-36 md:h-52 object-contain" />
+          <Image src="/images/corelogo.png" alt="Core Resources Logo" width={400} height={208} className="h-36 w-auto md:h-52 object-contain" priority />
         </div>
 
         {/* Headline (SEO H1) */}
@@ -52,16 +53,16 @@ export default function HomeContent() {
         <div className="grid md:grid-cols-2 gap-12 text-left">
 
           {/* Service Card 1: Build Your Team */}
-          <div className="flex flex-col relative group min-h-[450px] p-8 bg-transparent overflow-hidden rounded-3xl">
-            <div className="absolute top-0 bottom-0 right-0 w-full md:w-[65%] h-full grayscale group-hover:grayscale-0 transition-all duration-500 rounded-3xl md:rounded-l-none md:rounded-r-3xl [mask-image:linear-gradient(to_bottom,transparent_0%,black_40%)] md:[mask-image:linear-gradient(to_right,transparent_0%,black_85%)] -z-10">
-              <img alt="Global Map" className="w-full h-full object-cover" src="/images/mapa.webp" />
+          <div className="flex flex-col relative group min-h-[450px] p-8 bg-transparent overflow-hidden rounded-3xl items-center text-center md:items-start md:text-left">
+            <div className="absolute top-0 left-0 w-full h-[55%] md:h-full md:w-[65%] md:left-auto md:right-0 grayscale group-hover:grayscale-0 transition-all duration-500 rounded-t-3xl md:rounded-t-none md:rounded-r-3xl [mask-image:linear-gradient(to_bottom,black_40%,transparent_100%)] md:[mask-image:linear-gradient(to_right,transparent_0%,black_85%)] -z-10">
+              <Image alt="Global Map" src="/images/mapa.webp" fill className="object-cover" />
             </div>
 
-            <div className="relative z-10 w-full md:w-[70%] flex flex-col h-full">
+            <div className="relative z-10 w-full md:w-[70%] flex flex-col h-full pt-44 md:pt-0 items-center md:items-start">
               <h3 className="font-raleway font-thin text-[36px] md:text-[43px] leading-none mb-4 text-black uppercase">
                 BUILD YOUR<br /><span className="group-hover:text-[#560FF3] transition-colors  font-bold duration-500">TEAM</span>
               </h3>
-              <p className="text-black font-medium text-sm leading-relaxed mb-6">
+              <p className="text-black font-medium text-sm leading-relaxed mb-6 max-w-sm md:max-w-none">
                 Build the team you need with recruitment, staffing, legal hiring solutions abroad and employment visa support.
               </p>
 
@@ -87,8 +88,8 @@ export default function HomeContent() {
                 </ul>
               </div>
 
-              {/* Expanded details (Mobile) */}
-              <div className="md:hidden mb-8 text-sm text-black">
+              {/* Expanded details (Mobile) - Hidden to match clean screenshot layout */}
+              <div className="md:hidden mb-8 text-sm text-black hidden">
                 <p className="mb-2 font-bold text-black">Services included:</p>
                 <ul className="list-disc list-inside space-y-1 mb-4">
                   <li>Recruitment & Selection</li>
@@ -97,27 +98,27 @@ export default function HomeContent() {
                 </ul>
               </div>
 
-              <div className="relative z-10 mt-auto pt-4 self-start">
-                <Link className="group/btn relative inline-flex items-center justify-center overflow-hidden bg-gradient-to-b from-gray-50 to-gray-300 text-[#999999] group-hover:text-white text-sm font-bold uppercase py-3 px-6 rounded-lg transition-all duration-300 origin-left hover:scale-105 hover:shadow-lg" href="/buildTeams">
+              <div className="relative z-10 mt-auto pt-4 self-center md:self-start">
+                <Link className="group/btn relative inline-flex items-center justify-center overflow-hidden bg-gradient-to-b from-gray-50 to-gray-300 text-[#999999] group-hover:text-white text-sm font-bold uppercase py-3 px-6 rounded-lg transition-all duration-300 origin-center md:origin-left hover:scale-105 hover:shadow-lg" href="/buildTeams">
                   <span className="absolute inset-0 bg-gradient-to-r from-[#450CC2] to-[#2827E5] opacity-0 group-hover:opacity-100 transition-opacity duration-300"></span>
                   <span className="absolute inset-0 bg-[#560FF3] opacity-0 group-hover/btn:opacity-100 transition-opacity duration-300"></span>
-                  <span className="relative z-10">Start Building Your Team</span>
+                  <span className="relative z-10">See Recruitment Solutions</span>
                 </Link>
               </div>
             </div>
           </div>
 
           {/* Service Card 2: Run Your Operations */}
-          <div className="flex flex-col relative group min-h-[450px] p-8 bg-transparent overflow-hidden rounded-3xl text-right">
-            <div className="absolute top-0 bottom-0 left-0 w-full md:w-[65%] h-full grayscale group-hover:grayscale-0 transition-all duration-500 rounded-3xl md:rounded-r-none md:rounded-l-3xl [mask-image:linear-gradient(to_bottom,transparent_0%,black_40%)] md:[mask-image:linear-gradient(to_left,transparent_0%,black_85%)] -z-10">
-              <img alt="Laptop Dashboard" className="w-full h-full object-cover" src="/images/dashboard.webp" />
+          <div className="flex flex-col relative group min-h-[450px] p-8 bg-transparent overflow-hidden rounded-3xl items-center text-center md:items-end md:text-right">
+            <div className="absolute top-0 left-0 w-full h-[55%] md:h-full md:w-[65%] md:right-auto md:left-0 grayscale group-hover:grayscale-0 transition-all duration-500 rounded-t-3xl md:rounded-t-none md:rounded-l-3xl [mask-image:linear-gradient(to_bottom,black_40%,transparent_100%)] md:[mask-image:linear-gradient(to_left,transparent_0%,black_85%)] -z-10">
+              <Image alt="Laptop Dashboard" src="/images/dashboard.webp" fill className="object-cover" />
             </div>
 
-            <div className="relative z-10 w-full md:w-[70%] ml-auto flex flex-col h-full items-end">
+            <div className="relative z-10 w-full md:w-[70%] ml-auto flex flex-col h-full pt-44 md:pt-0 items-center md:items-end">
               <h3 className="font-raleway font-thin text-[36px] md:text-[43px] leading-none mb-4 text-black uppercase">
                 RUN YOUR<br /><span className="group-hover:text-[#560FF3] font-bold transition-colors duration-500">OPERATIONS</span>
               </h3>
-              <p className="text-black font-medium text-sm leading-relaxed mb-6">
+              <p className="text-black font-medium text-sm leading-relaxed mb-6 max-w-sm md:max-w-none">
                 Delegate bookkeeping, payroll, contractor payments, admin, finance and back-office operations.
               </p>
 
@@ -144,8 +145,8 @@ export default function HomeContent() {
                 </ul>
               </div>
 
-              {/* Expanded details (Mobile) */}
-              <div className="md:hidden mb-8 text-sm text-black text-right">
+              {/* Expanded details (Mobile) - Hidden to match clean screenshot layout */}
+              <div className="md:hidden mb-8 text-sm text-black text-center hidden">
                 <p className="mb-2 font-bold text-black">Services included:</p>
                 <ul className="list-none space-y-1 mb-4">
                   <li>CoreBooks / Bookkeeping</li>
@@ -154,11 +155,11 @@ export default function HomeContent() {
                 </ul>
               </div>
 
-              <div className="relative z-10 mt-auto pt-4 self-end">
-                <Link className="group/btn relative inline-flex items-center justify-center overflow-hidden bg-gradient-to-b from-gray-50 to-gray-300 text-[#999999] group-hover:text-white text-sm font-bold uppercase py-3 px-6 rounded-lg transition-all duration-300 origin-right hover:scale-105 hover:shadow-lg" href="/runOperations">
+              <div className="relative z-10 mt-auto pt-4 self-center md:self-end">
+                <Link className="group/btn relative inline-flex items-center justify-center overflow-hidden bg-gradient-to-b from-gray-50 to-gray-300 text-[#999999] group-hover:text-white text-sm font-bold uppercase py-3 px-6 rounded-lg transition-all duration-300 origin-center md:origin-right hover:scale-105 hover:shadow-lg" href="/runOperations">
                   <span className="absolute inset-0 bg-gradient-to-r from-[#450CC2] to-[#2827E5] opacity-0 group-hover:opacity-100 transition-opacity duration-300"></span>
                   <span className="absolute inset-0 bg-[#560FF3] opacity-0 group-hover/btn:opacity-100 transition-opacity duration-300"></span>
-                  <span className="relative z-10">Optimize Your Operations</span>
+                  <span className="relative z-10">See Operational Solutions</span>
                 </Link>
               </div>
             </div>
