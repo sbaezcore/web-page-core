@@ -36,10 +36,13 @@ export default function Navbar() {
           </Link>
 
           {/* Navigation */}
-          <nav className="hidden md:flex space-x-2 text-sm font-medium">
-            <Link className="text-[#181789] px-4 py-2 rounded-lg hover:bg-core-purple hover:text-white transition-all" href="/about">About Core</Link>
-            <Link className="text-[#181789] px-4 py-2 rounded-lg hover:bg-core-purple hover:text-white transition-all" href="/services">Services</Link>
-            <Link className="text-[#181789] px-4 py-2 rounded-lg hover:bg-core-purple hover:text-white transition-all" href="/contact">Contact</Link>
+          <nav className="hidden md:flex space-x-2 text-sm font-medium items-center">
+            <Link className="text-[#181789] hover:bg-[#560FF3]/80 hover:text-white px-4 py-2 rounded-lg transition-all duration-300" href="/buildTeams">Build Your Team</Link>
+            <Link className="text-[#181789] hover:bg-[#560FF3]/80 hover:text-white px-4 py-2 rounded-lg transition-all duration-300" href="/runOperations">Run Your Operations</Link>
+            <Link className="text-[#181789] hover:bg-[#560FF3]/80 hover:text-white px-4 py-2 rounded-lg transition-all duration-300" href="/about">About Core</Link>
+            <Link className="text-[#181789] hover:bg-[#560FF3]/80 hover:text-white px-4 py-2 rounded-lg transition-all duration-300" href="/services">Services</Link>
+            <Link className="text-[#181789] hover:bg-[#560FF3]/80 hover:text-white px-4 py-2 rounded-lg transition-all duration-300" href="/faq">FAQ</Link>
+            <Link className="text-[#181789] hover:bg-[#560FF3]/80 hover:text-white px-4 py-2 rounded-lg transition-all duration-300" href="/contact">Contact</Link>
           </nav>
 
           {/* Header Actions */}
