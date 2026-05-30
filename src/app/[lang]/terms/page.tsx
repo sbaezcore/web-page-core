@@ -1,11 +1,19 @@
 import React from 'react';
 
-export const metadata = {
-  title: 'Terms and Conditions | Core Resources',
-  description: 'Terms and conditions for using Thecoreresources.com.',
-};
+import type { Metadata } from 'next';
 
-export default function TermsPage() {
+export async function generateMetadata(props: { params: Promise<{ lang: string }> }): Promise<Metadata> {
+  const params = await props.params;
+  const lang = params.lang || 'en';
+  return {
+    title: lang === 'es' ? 'Términos y Condiciones | Core Resources' : 'Terms and Conditions | Core Resources',
+    description: 'Terms and conditions for using Thecoreresources.com.',
+  };
+}
+
+export default async function TermsPage(props: { params: Promise<{ lang: string }> }) {
+  const params = await props.params;
+  const lang = params.lang;
   return (
     <main className="pt-32 pb-24 px-8 max-w-4xl mx-auto">
       <h1 className="font-raleway font-bold text-[36px] md:text-[48px] leading-none text-black mb-12">

@@ -1,11 +1,19 @@
 import React from 'react';
 
-export const metadata = {
-  title: 'Privacy Policy | Core Resources',
-  description: 'Privacy Policy for Thecoreresources.com',
-};
+import type { Metadata } from 'next';
 
-export default function PrivacyPage() {
+export async function generateMetadata(props: { params: Promise<{ lang: string }> }): Promise<Metadata> {
+  const params = await props.params;
+  const lang = params.lang || 'en';
+  return {
+    title: lang === 'es' ? 'Aviso de Privacidad | Core Resources' : 'Privacy Policy | Core Resources',
+    description: 'Privacy Policy for Thecoreresources.com',
+  };
+}
+
+export default async function PrivacyPage(props: { params: Promise<{ lang: string }> }) {
+  const params = await props.params;
+  const lang = params.lang;
   return (
     <main className="pt-32 pb-24 px-8 max-w-4xl mx-auto">
       <h1 className="font-raleway font-bold text-[36px] md:text-[48px] leading-none text-black mb-12">

@@ -1,9 +1,9 @@
 import Image from 'next/image';
 import Link from 'next/link';
 import { Users, Calendar, Globe, UserPlus, FileText, Handshake, CheckCircle2 } from 'lucide-react';
-import FadeInSection from '../../components/FadeInSection';
+import FadeInSection from '../../../components/FadeInSection';
 
-export default function BuildTeamsContent() {
+export default function BuildTeamsContent({ dict }: { dict: any }) {
   return (
     <main className="w-full mx-auto overflow-hidden">
       {/* Hero Section */}

@@ -1,9 +1,9 @@
 import Image from 'next/image';
 import Link from 'next/link';
 import { Workflow, CheckCircle2, BookOpen, Banknote, HandCoins, Network, FileText, TrendingUp } from 'lucide-react';
-import FadeInSection from '../../components/FadeInSection';
+import FadeInSection from '../../../components/FadeInSection';
 
-export default function RunOperationsContent() {
+export default function RunOperationsContent({ dict }: { dict: any }) {
   return (
     <main className="w-full mx-auto overflow-hidden">
       {/* Hero Section */}

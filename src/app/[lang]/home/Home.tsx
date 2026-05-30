@@ -3,9 +3,9 @@ import Link from 'next/link';
 import Image from 'next/image';
 import { useState, useEffect } from 'react';
 import { Globe, User, TrendingUp, Briefcase, Laptop, ShieldCheck, UserCircle, CheckCircle, X } from 'lucide-react';
-import FadeInSection from '../../components/FadeInSection';
+import FadeInSection from '@/components/FadeInSection';
 
-export default function HomeContent() {
+export default function HomeContent({ dict, lang }: { dict: any, lang: string }) {
   const [activeModal, setActiveModal] = useState<'build' | 'operations' | null>(null);
 
   useEffect(() => {
@@ -30,10 +30,10 @@ export default function HomeContent() {
         <FadeInSection delay={0.1}>
           <h1 className="leading-none mb-8 flex flex-col items-center">
             <span className="block font-raleway font-medium text-[32px] text-black mb-2">
-              Build your team. Run your operations.
+              {dict.heroTitle1}
             </span>
             <span className="block font-raleway font-bold text-[36px] text-[#560FF3] tracking-normal">
-              Scale without unnecessary complexity.
+              {dict.heroTitle2}
             </span>
           </h1>
         </FadeInSection>
@@ -41,10 +41,10 @@ export default function HomeContent() {
         {/* Subheadlines */}
         <FadeInSection delay={0.1}>
           <p className="text-black text-lg md:text-xl max-w-4xl mx-auto mb-4 font-medium">
-            Core Resources helps U.S. companies scale through global talent solutions and outsourced operations designed to reduce costs, simplify execution and support sustainable growth.
+            {dict.heroDesc1}
           </p>
           <p className="text-black text-base md:text-lg max-w-3xl mx-auto mb-12">
-            Whether you need to build a team, manage hiring complexity, or delegate administrative, finance and back-office work, we help you find the right structure to grow without building everything in-house.
+            {dict.heroDesc2}
           </p>
         </FadeInSection>
 
@@ -52,10 +52,10 @@ export default function HomeContent() {
         <FadeInSection delay={0.2}>
           <div className="flex flex-col sm:flex-row items-center justify-center gap-4">
             <Link className="inline-block bg-gradient-to-r from-[#450CC2] to-[#2827E5] hover:from-[#560FF3] hover:to-[#560FF3] text-white px-10 py-4 rounded-lg text-base font-bold uppercase tracking-wide hover:opacity-90 hover:scale-105 transform transition-all duration-300 shadow-lg shadow-indigo-500/30 w-full sm:w-auto" href="https://calendly.com/alejandro-torres-thecoreresources/30min?month=2026-05" target="_blank" rel="noopener noreferrer">
-              Book a Call
+              {dict.bookACallBtn}
             </Link>
             <Link className="inline-block bg-white border-2 border-gray-200 text-gray-700 hover:border-[#560FF3] hover:text-[#560FF3] px-10 py-4 rounded-lg text-base font-bold uppercase tracking-wide hover:scale-105 transform transition-all duration-300 shadow-sm w-full sm:w-auto" href="#solutions">
-              Find the Right Solution
+              {dict.findSolutionBtn}
             </Link>
           </div>
         </FadeInSection>
@@ -64,9 +64,9 @@ export default function HomeContent() {
       {/* SECTION 2: Intro before cards */}
       <section id="solutions" className="max-w-4xl mx-auto px-8 py-12 text-center relative z-10">
         <FadeInSection>
-          <h2 className="font-raleway font-bold text-[36px] md:text-[43px] leading-none text-black mb-6">How can we help you grow?</h2>
+          <h2 className="font-raleway font-bold text-[36px] md:text-[43px] leading-none text-black mb-6">{dict.howCanWeHelpTitle}</h2>
           <p className="text-black text-lg leading-relaxed">
-            Every growing company reaches a point where doing everything internally becomes expensive, complex and hard to manage. Core gives U.S. companies two ways to scale smarter: build the team they need through flexible talent solutions, or delegate operational work through structured BPO and back-office support.
+            {dict.howCanWeHelpDesc}
           </p>
         </FadeInSection>
       </section>
@@ -87,43 +87,43 @@ export default function HomeContent() {
 
               <div className="relative z-10 w-full md:w-[70%] flex flex-col h-full pt-44 md:pt-0 items-center md:items-start">
                 <h3 className="font-raleway font-medium text-[36px] md:text-[43px] leading-none mb-4 text-black uppercase">
-                  BUILD YOUR<br /><span className="group-hover:text-[#560FF3] transition-colors  font-bold duration-500">TEAM</span>
+                  {dict.buildTeamTitle1}<br /><span className="group-hover:text-[#560FF3] transition-colors  font-bold duration-500">TEAM</span>
                 </h3>
                 <p className="text-black font-medium text-sm leading-relaxed mb-6 max-w-sm md:max-w-none">
-                  Build the team you need with recruitment, staffing, legal hiring solutions abroad and employment visa support.
+                  {dict.buildTeamDesc}
                 </p>
 
                 {/* Expanded details (Visible on desktop) */}
                 <div className="text-sm text-black leading-relaxed mb-8 hidden md:block">
-                  <p className="mb-2 font-bold text-black">Services included:</p>
+                  <p className="mb-2 font-bold text-black">{dict.servicesIncluded}</p>
                   <ul className="list-none space-y-1">
-                    <li>• Recruitment & Selection</li>
-                    <li>• Staffing</li>
-                    <li>• EOR / Employer of Record</li>
-                    <li className="pt-2 text-gray-500 italic">and more...</li>
+                    <li>{dict.buildService1}</li>
+                    <li>{dict.buildService2}</li>
+                    <li>{dict.buildService3}</li>
+                    <li className="pt-2 text-gray-500 italic">{dict.andMore}</li>
                   </ul>
                 </div>
 
                 {/* Expanded details (Mobile) - Hidden to match clean screenshot layout */}
                 <div className="md:hidden mb-8 text-sm text-black hidden">
-                  <p className="mb-2 font-bold text-black">Services included:</p>
+                  <p className="mb-2 font-bold text-black">{dict.servicesIncluded}</p>
                   <ul className="list-none space-y-1 mb-4">
-                    <li>• Recruitment & Selection</li>
-                    <li>• Staffing</li>
-                    <li>• EOR / Employer of Record</li>
-                    <li className="pt-2 text-gray-500 italic">and more...</li>
+                    <li>{dict.buildService1}</li>
+                    <li>{dict.buildService2}</li>
+                    <li>{dict.buildService3}</li>
+                    <li className="pt-2 text-gray-500 italic">{dict.andMore}</li>
                   </ul>
                 </div>
 
                 <div className="relative z-10 mt-auto pt-4 self-center md:self-start">
-                  <Link 
+                  <Link
                     onClick={(e) => e.stopPropagation()}
-                    className="group/btn relative inline-flex items-center justify-center overflow-hidden bg-gradient-to-b from-gray-50 to-gray-300 text-[#999999] group-hover:text-white text-sm font-bold uppercase py-3 px-6 rounded-lg transition-all duration-300 origin-center md:origin-left hover:scale-105 hover:shadow-lg" 
-                    href="/buildTeams"
+                    className="group/btn relative inline-flex items-center justify-center overflow-hidden bg-gradient-to-b from-gray-50 to-gray-300 text-[#999999] group-hover:text-white text-sm font-bold uppercase py-3 px-6 rounded-lg transition-all duration-300 origin-center md:origin-left hover:scale-105 hover:shadow-lg"
+                    href={`/${lang}/buildTeams`}
                   >
                     <span className="absolute inset-0 bg-gradient-to-r from-[#450CC2] to-[#2827E5] opacity-0 group-hover:opacity-100 transition-opacity duration-300"></span>
                     <span className="absolute inset-0 bg-[#560FF3] opacity-0 group-hover/btn:opacity-100 transition-opacity duration-300"></span>
-                    <span className="relative z-10">See Recruitment Solutions</span>
+                    <span className="relative z-10">{dict.seeRecruitmentBtn}</span>
                   </Link>
                 </div>
               </div>
@@ -142,43 +142,43 @@ export default function HomeContent() {
 
               <div className="relative z-10 w-full md:w-[70%] ml-auto flex flex-col h-full pt-44 md:pt-0 items-center md:items-end">
                 <h3 className="font-raleway font-medium text-[36px] md:text-[43px] leading-none mb-4 text-black uppercase">
-                  RUN YOUR<br /><span className="group-hover:text-[#560FF3] font-bold transition-colors duration-500">OPERATIONS</span>
+                  {dict.runOpsTitle1}<br /><span className="group-hover:text-[#560FF3] font-bold transition-colors duration-500">{dict.runOpsTitle2}</span>
                 </h3>
                 <p className="text-black font-medium text-sm leading-relaxed mb-6 max-w-sm md:max-w-none">
-                  Delegate bookkeeping, payroll, contractor payments, admin, finance and back-office operations.
+                  {dict.runOpsDesc}
                 </p>
 
                 {/* Expanded details (Visible on desktop) */}
                 <div className="text-sm text-black leading-relaxed mb-8 hidden md:block text-right">
-                  <p className="mb-2 font-bold text-black">Services included:</p>
+                  <p className="mb-2 font-bold text-black">{dict.servicesIncluded}</p>
                   <ul className="list-none space-y-1">
-                    <li>Bookkeeping •</li>
-                    <li>Payroll Services •</li>
-                    <li>Contractor Payments •</li>
-                    <li className="pt-2 text-gray-500 italic">and more...</li>
+                    <li>{dict.opsService1} •</li>
+                    <li>{dict.opsService2} •</li>
+                    <li>{dict.opsService3} •</li>
+                    <li className="pt-2 text-gray-500 italic">{dict.andMore}</li>
                   </ul>
                 </div>
 
                 {/* Expanded details (Mobile) - Hidden to match clean screenshot layout */}
                 <div className="md:hidden mb-8 text-sm text-black text-center hidden">
-                  <p className="mb-2 font-bold text-black">Services included:</p>
+                  <p className="mb-2 font-bold text-black">{dict.servicesIncluded}</p>
                   <ul className="list-none space-y-1 mb-4">
-                    <li>Bookkeeping •</li>
-                    <li>Payroll Services •</li>
-                    <li>Contractor Payments •</li>
-                    <li className="pt-2 text-gray-500 italic">and more...</li>
+                    <li>{dict.opsService1} •</li>
+                    <li>{dict.opsService2} •</li>
+                    <li>{dict.opsService3} •</li>
+                    <li className="pt-2 text-gray-500 italic">{dict.andMore}</li>
                   </ul>
                 </div>
 
                 <div className="relative z-10 mt-auto pt-4 self-center md:self-end">
-                  <Link 
+                  <Link
                     onClick={(e) => e.stopPropagation()}
-                    className="group/btn relative inline-flex items-center justify-center overflow-hidden bg-gradient-to-b from-gray-50 to-gray-300 text-[#999999] group-hover:text-white text-sm font-bold uppercase py-3 px-6 rounded-lg transition-all duration-300 origin-center md:origin-right hover:scale-105 hover:shadow-lg" 
-                    href="/runOperations"
+                    className="group/btn relative inline-flex items-center justify-center overflow-hidden bg-gradient-to-b from-gray-50 to-gray-300 text-[#999999] group-hover:text-white text-sm font-bold uppercase py-3 px-6 rounded-lg transition-all duration-300 origin-center md:origin-right hover:scale-105 hover:shadow-lg"
+                    href={`/${lang}/runOperations`}
                   >
                     <span className="absolute inset-0 bg-gradient-to-r from-[#450CC2] to-[#2827E5] opacity-0 group-hover:opacity-100 transition-opacity duration-300"></span>
                     <span className="absolute inset-0 bg-[#560FF3] opacity-0 group-hover/btn:opacity-100 transition-opacity duration-300"></span>
-                    <span className="relative z-10">See Operational Solutions</span>
+                    <span className="relative z-10">{dict.seeOperationalBtn}</span>
                   </Link>
                 </div>
               </div>
@@ -226,16 +226,16 @@ export default function HomeContent() {
               {/* Right side: Text Content */}
               <div className="w-full md:w-1/2 text-center md:text-left transition-colors duration-500">
                 <h2 className="font-raleway font-bold text-[36px] md:text-[43px] leading-none mb-6 text-black group-hover:text-[#560FF3] transition-colors duration-500">
-                  One partner to help you scale people and operations.
+                  {dict.onePartnerTitle}
                 </h2>
                 <p className="text-black mb-4 text-lg leading-relaxed">
-                  Core Resources is more than a recruiting partner, a staffing provider or a BPO company. We help U.S. companies design practical, cost-efficient ways to grow through talent solutions and outsourced operations.
+                  {dict.onePartnerDesc1}
                 </p>
                 <p className="text-black mb-6 text-lg leading-relaxed">
-                  Our role is to simplify the path from business need to execution: understanding what your company requires, finding the right talent or operational structure, and supporting the work over time so your business can keep moving forward.
+                  {dict.onePartnerDesc2}
                 </p>
-                <Link className="text-black font-semibold underline underline-offset-4 decoration-2 decoration-gray-300 hover:decoration-[#560FF3] group-hover:text-[#560FF3] group-hover:decoration-[#560FF3] transition-colors duration-500 text-lg" href="/about">
-                  About us
+                <Link className="text-black font-semibold underline underline-offset-4 decoration-2 decoration-gray-300 hover:decoration-[#560FF3] group-hover:text-[#560FF3] group-hover:decoration-[#560FF3] transition-colors duration-500 text-lg" href={`/${lang}/about`}>
+                  {dict.aboutUsLink}
                 </Link>
               </div>
             </div>
@@ -246,29 +246,29 @@ export default function HomeContent() {
             <FadeInSection delay={0.1}>
               <div className="bg-white p-8 rounded-2xl shadow-sm border border-gray-100 hover:shadow-md transition-all h-full">
                 <div className="text-core-purple font-bold text-4xl mb-4 opacity-50">1</div>
-                <h3 className="font-raleway font-bold text-xl mb-3 text-black">Built around your business need</h3>
-                <p className="text-black text-sm leading-relaxed">We do not start with a generic service list. We start with the problem you need to solve: hiring, workload, cost reduction, operational control, compliance or growth.</p>
+                <h3 className="font-raleway font-bold text-xl mb-3 text-black">{dict.diff1Title}</h3>
+                <p className="text-black text-sm leading-relaxed">{dict.diff1Desc}</p>
               </div>
             </FadeInSection>
             <FadeInSection delay={0.2}>
               <div className="bg-white p-8 rounded-2xl shadow-sm border border-gray-100 hover:shadow-md transition-all h-full">
                 <div className="text-core-purple font-bold text-4xl mb-4 opacity-50">2</div>
-                <h3 className="font-raleway font-bold text-xl mb-3 text-black">Talent and operations under one structure</h3>
-                <p className="text-black text-sm leading-relaxed">Core can help you build a team, run part of your operation, or combine both solutions when your business needs people, processes and execution working together.</p>
+                <h3 className="font-raleway font-bold text-xl mb-3 text-black">{dict.diff2Title}</h3>
+                <p className="text-black text-sm leading-relaxed">{dict.diff2Desc}</p>
               </div>
             </FadeInSection>
             <FadeInSection delay={0.3}>
               <div className="bg-white p-8 rounded-2xl shadow-sm border border-gray-100 hover:shadow-md transition-all h-full">
                 <div className="text-core-purple font-bold text-4xl mb-4 opacity-50">3</div>
-                <h3 className="font-raleway font-bold text-xl mb-3 text-black">Global reach, practical execution</h3>
-                <p className="text-black text-sm leading-relaxed">Core is based in Mexico and works with U.S. companies to access talent across Latin America and other global markets where hiring can be more cost-efficient and equally or more effective.</p>
+                <h3 className="font-raleway font-bold text-xl mb-3 text-black">{dict.diff3Title}</h3>
+                <p className="text-black text-sm leading-relaxed">{dict.diff3Desc}</p>
               </div>
             </FadeInSection>
             <FadeInSection delay={0.4}>
               <div className="bg-white p-8 rounded-2xl shadow-sm border border-gray-100 hover:shadow-md transition-all h-full">
                 <div className="text-core-purple font-bold text-4xl mb-4 opacity-50">4</div>
-                <h3 className="font-raleway font-bold text-xl mb-3 text-black">Ongoing support, not just setup</h3>
-                <p className="text-black text-sm leading-relaxed">Whether we help you hire talent, staff a role or manage back-office operations, our focus is on building a reliable structure that supports your company month after month.</p>
+                <h3 className="font-raleway font-bold text-xl mb-3 text-black">{dict.diff4Title}</h3>
+                <p className="text-black text-sm leading-relaxed">{dict.diff4Desc}</p>
               </div>
             </FadeInSection>
           </div>
@@ -279,53 +279,53 @@ export default function HomeContent() {
       {/* SECTION 5: Pain-based section */}
       <section className="max-w-7xl mx-auto px-8 py-20 relative z-10 flex flex-col md:flex-row items-center gap-16">
         <FadeInSection className="w-full md:w-1/2">
-          <h2 className="font-raleway font-bold text-[36px] md:text-[43px] leading-none text-black mb-6">If growth is creating more work than your team can handle, Core can help.</h2>
+          <h2 className="font-raleway font-bold text-[36px] md:text-[43px] leading-none text-black mb-6">{dict.painTitle}</h2>
           <p className="text-black text-lg leading-relaxed mb-6">
-            Many companies reach a point where growth brings more tasks, more costs and more operational pressure. Hiring only in the U.S. may be expensive. Building full internal departments may be unnecessary. Managing administration, finance, bookkeeping or payroll internally may take time away from the activities that actually grow the business.
+            {dict.painDesc1}
           </p>
           <p className="text-core-purple font-bold text-xl mb-10">
-            Core helps solve that gap with flexible talent and BPO solutions designed for growing U.S. companies.
+            {dict.painDesc2}
           </p>
           <Link className="inline-block bg-gradient-to-r from-[#450CC2] to-[#2827E5] hover:from-[#560FF3] hover:to-[#560FF3] text-white px-8 py-4 rounded-lg text-base font-bold uppercase tracking-wide hover:opacity-90 hover:scale-105 transform transition-all duration-300 shadow-md origin-center" href="#solutions">
-            Find the Right Solution
+            {dict.findSolutionBtn}
           </Link>
         </FadeInSection>
 
         <FadeInSection delay={0.2} className="w-full md:w-1/2">
           <div className="bg-white p-8 md:p-12 rounded-3xl border border-gray-200 shadow-xl shadow-gray-200/50">
-            <h3 className="font-raleway font-bold text-3xl mb-8 text-black">Pain points we solve:</h3>
+            <h3 className="font-raleway font-bold text-3xl mb-8 text-black">{dict.painPointsTitle}</h3>
             <ul className="space-y-5">
               <li className="flex items-start gap-4">
                 <CheckCircle className="text-core-purple w-6 h-6 mt-0.5 shrink-0" />
-                <span className="text-black font-medium">High hiring costs in the U.S.</span>
+                <span className="text-black font-medium">{dict.painPoint1}</span>
               </li>
               <li className="flex items-start gap-4">
                 <CheckCircle className="text-core-purple w-6 h-6 mt-0.5 shrink-0" />
-                <span className="text-black font-medium">Difficulty finding qualified talent.</span>
+                <span className="text-black font-medium">{dict.painPoint2}</span>
               </li>
               <li className="flex items-start gap-4">
                 <CheckCircle className="text-core-purple w-6 h-6 mt-0.5 shrink-0" />
-                <span className="text-black font-medium">Temporary, project-based or long-term hiring needs.</span>
+                <span className="text-black font-medium">{dict.painPoint3}</span>
               </li>
               <li className="flex items-start gap-4">
                 <CheckCircle className="text-core-purple w-6 h-6 mt-0.5 shrink-0" />
-                <span className="text-black font-medium">Too much administrative workload.</span>
+                <span className="text-black font-medium">{dict.painPoint4}</span>
               </li>
               <li className="flex items-start gap-4">
                 <CheckCircle className="text-core-purple w-6 h-6 mt-0.5 shrink-0" />
-                <span className="text-black font-medium">Messy bookkeeping, payroll or back-office processes.</span>
+                <span className="text-black font-medium">{dict.painPoint5}</span>
               </li>
               <li className="flex items-start gap-4">
                 <CheckCircle className="text-core-purple w-6 h-6 mt-0.5 shrink-0" />
-                <span className="text-black font-medium">Contractor payment complexity.</span>
+                <span className="text-black font-medium">{dict.painPoint6}</span>
               </li>
               <li className="flex items-start gap-4">
                 <CheckCircle className="text-core-purple w-6 h-6 mt-0.5 shrink-0" />
-                <span className="text-black font-medium">Owners spending time on operations instead of growth.</span>
+                <span className="text-black font-medium">{dict.painPoint7}</span>
               </li>
               <li className="flex items-start gap-4">
                 <CheckCircle className="text-core-purple w-6 h-6 mt-0.5 shrink-0" />
-                <span className="text-black font-medium">Need for more support without building a full internal team.</span>
+                <span className="text-black font-medium">{dict.painPoint8}</span>
               </li>
             </ul>
           </div>
@@ -337,12 +337,12 @@ export default function HomeContent() {
         <div className="absolute inset-0 bg-network-pattern opacity-10"></div>
         <FadeInSection>
           <div className="max-w-3xl mx-auto relative z-10">
-            <h2 className="font-raleway font-bold text-[36px] md:text-[43px] leading-none mb-6">Not sure which solution fits your business?</h2>
+            <h2 className="font-raleway font-bold text-[36px] md:text-[43px] leading-none mb-6">{dict.finalCtaTitle}</h2>
             <p className="text-xl text-purple-100 mb-10 leading-relaxed font-light">
-              Tell us what you are trying to solve. Our team can help you identify whether you need talent solutions, operational support or a combination of both.
+              {dict.finalCtaDesc}
             </p>
             <Link className="inline-block bg-white text-[#560FF3] px-12 py-4 rounded-lg text-lg font-bold uppercase tracking-wide hover:bg-gray-100 hover:scale-105 transform transition-all duration-300 origin-center shadow-xl shadow-black/20" href="https://calendly.com/alejandro-torres-thecoreresources/30min?month=2026-05" target="_blank" rel="noopener noreferrer">
-              Book a Call
+              {dict.bookACallBtn}
             </Link>
           </div>
         </FadeInSection>
@@ -367,62 +367,62 @@ export default function HomeContent() {
             {activeModal === 'build' ? (
               <>
                 <h3 className="font-raleway font-bold text-2xl md:text-3xl mb-6 pr-8">
-                  Need to build a team without hiring friction or unnecessary overhead?
+                  {dict.buildModalTitle}
                 </h3>
                 <p className="text-gray-300 text-sm md:text-base leading-relaxed mb-4">
-                  Core helps U.S. companies build qualified, cost-efficient teams through flexible talent solutions. Whether you need to recruit a long-term employee, cover a temporary or project-based role, strengthen your existing team, manage employment visa needs, or legally hire talent abroad without opening a local entity through an Employer of Record (EOR), we help structure the right solution.
+                  {dict.buildModalDesc1}
                 </p>
                 <p className="text-gray-300 text-sm md:text-base leading-relaxed mb-6">
-                  We support the process from talent search and hiring setup to onboarding and ongoing management, so your company can grow without unnecessary legal, operational or administrative complexity.
+                  {dict.buildModalDesc2}
                 </p>
 
-                <h4 className="font-bold text-white mb-3">Services included</h4>
+                <h4 className="font-bold text-white mb-3">{dict.servicesIncluded}</h4>
                 <ul className="list-none space-y-2 mb-8 text-gray-300 text-sm md:text-base">
-                  <li>• Recruitment & Selection</li>
-                  <li>• Staffing</li>
-                  <li>• EOR / Employer of Record</li>
-                  <li>• Staff Augmentation</li>
-                  <li>• Employment Visa Services</li>
-                  <li>• Hiring and onboarding support</li>
+                  <li>{dict.buildService1}</li>
+                  <li>{dict.buildService2}</li>
+                  <li>{dict.buildService3}</li>
+                  <li>{dict.buildService4}</li>
+                  <li>{dict.buildService5}</li>
+                  <li>{dict.buildService6}</li>
                 </ul>
 
                 <Link
-                  href="/buildTeams"
+                  href={`/${lang}/buildTeams`}
                   className="inline-block bg-[#3B12D1] hover:bg-[#560FF3] text-white font-bold px-6 py-3 rounded-xl transition-all duration-300 text-sm hover:scale-105"
                   onClick={() => setActiveModal(null)}
                 >
-                  See Recruitment Solutions
+                  {dict.seeRecruitmentBtn}
                 </Link>
               </>
             ) : (
               <>
                 <h3 className="font-raleway font-bold text-2xl md:text-3xl mb-6 pr-8">
-                  Need your operation to run better without hiring more people?
+                  {dict.opsModalTitle}
                 </h3>
                 <p className="text-gray-300 text-sm md:text-base leading-relaxed mb-4">
-                  Core helps growing companies outsource the operational work that consumes time, creates disorder and keeps owners or internal teams away from growth.
+                  {dict.opsModalDesc1}
                 </p>
                 <p className="text-gray-300 text-sm md:text-base leading-relaxed mb-6">
-                  Through CoreBooks and structured BPO support, we help manage bookkeeping, payroll, contractor payments, administrative tasks, finance support and back-office operations so your business stays organized, up to date and compliant.
+                  {dict.opsModalDesc2}
                 </p>
 
-                <h4 className="font-bold text-white mb-3">Services included</h4>
+                <h4 className="font-bold text-white mb-3">{dict.servicesIncluded}</h4>
                 <ul className="list-none space-y-2 mb-8 text-gray-300 text-sm md:text-base">
-                  <li>• Bookkeeping</li>
-                  <li>• Payroll Services</li>
-                  <li>• Contractor Payments</li>
-                  <li>• BPO / Back-Office Support</li>
-                  <li>• Administrative Support</li>
-                  <li>• Finance Support</li>
-                  <li>• Operational process support</li>
+                  <li>{dict.opsService1}</li>
+                  <li>{dict.opsService2}</li>
+                  <li>{dict.opsService3}</li>
+                  <li>{dict.opsService4}</li>
+                  <li>{dict.opsService5}</li>
+                  <li>{dict.opsService6}</li>
+                  <li>{dict.opsService7}</li>
                 </ul>
 
                 <Link
-                  href="/runOperations"
+                  href={`/${lang}/runOperations`}
                   className="inline-block bg-[#3B12D1] hover:bg-[#560FF3] text-white font-bold px-6 py-3 rounded-xl transition-all duration-300 text-sm hover:scale-105"
                   onClick={() => setActiveModal(null)}
                 >
-                  See Operational Solutions
+                  {dict.seeOperationalBtn}
                 </Link>
               </>
             )}

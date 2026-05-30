@@ -1,12 +1,22 @@
 "use client";
 import Link from 'next/link';
 import Image from 'next/image';
-import { Menu, XCircle } from 'lucide-react';
+import { Menu, XCircle, Globe } from 'lucide-react';
 import { useState, useEffect } from 'react';
+import { useRouter, usePathname } from 'next/navigation';
 
-export default function Navbar() {
+export default function Navbar({ dict, lang }: { dict: any, lang: string }) {
   const [isScrolled, setIsScrolled] = useState(false);
   const [isMobileMenuOpen, setIsMobileMenuOpen] = useState(false);
+  const router = useRouter();
+  const pathname = usePathname();
+
+  const switchLanguage = () => {
+    const newLang = lang === 'en' ? 'es' : 'en';
+    // pathname starts with /en or /es because of middleware
+    const newPath = pathname.replace(`/${lang}`, `/${newLang}`);
+    router.push(newPath);
+  };
 
   useEffect(() => {
     const handleScroll = () => {
@@ -31,25 +41,34 @@ export default function Navbar() {
       <div className="sticky top-4 z-50 w-full transition-all duration-300">
         <header className={`max-w-7xl mx-4 xl:mx-auto flex justify-between items-center transition-all duration-300 ${isScrolled ? 'bg-white/70 backdrop-blur-md shadow-sm rounded-lg py-3 px-6 xl:px-8' : 'bg-transparent py-6 px-4 xl:px-8'}`}>
           {/* Logo */}
-          <Link href="/" className="flex items-center">
+          <Link href={`/${lang}`} className="flex items-center">
             <Image src="/images/logo2026.svg" alt="Core Resources Logo" width={200} height={40} className="h-10 w-auto object-contain" priority />
           </Link>
 
           {/* Navigation */}
           <nav className="hidden md:flex space-x-2 text-sm font-medium items-center">
-            <Link className="text-[#181789] hover:bg-[#560FF3]/80 hover:text-white px-4 py-2 rounded-lg transition-all duration-300" href="/buildTeams">Build Your Team</Link>
-            <Link className="text-[#181789] hover:bg-[#560FF3]/80 hover:text-white px-4 py-2 rounded-lg transition-all duration-300" href="/runOperations">Run Your Operations</Link>
-            <Link className="text-[#181789] hover:bg-[#560FF3]/80 hover:text-white px-4 py-2 rounded-lg transition-all duration-300" href="/about">About Core</Link>
-            <Link className="text-[#181789] hover:bg-[#560FF3]/80 hover:text-white px-4 py-2 rounded-lg transition-all duration-300" href="/services">Services</Link>
-            <Link className="text-[#181789] hover:bg-[#560FF3]/80 hover:text-white px-4 py-2 rounded-lg transition-all duration-300" href="/faq">FAQ</Link>
-            <Link className="text-[#181789] hover:bg-[#560FF3]/80 hover:text-white px-4 py-2 rounded-lg transition-all duration-300" href="/contact">Contact</Link>
+            <Link className="text-[#181789] hover:bg-[#560FF3]/80 hover:text-white px-4 py-2 rounded-lg transition-all duration-300" href={`/${lang}/buildTeams`}>{dict.buildYourTeam}</Link>
+            <Link className="text-[#181789] hover:bg-[#560FF3]/80 hover:text-white px-4 py-2 rounded-lg transition-all duration-300" href={`/${lang}/runOperations`}>{dict.runOperations}</Link>
+            <Link className="text-[#181789] hover:bg-[#560FF3]/80 hover:text-white px-4 py-2 rounded-lg transition-all duration-300" href={`/${lang}/about`}>{dict.aboutCore}</Link>
+            <Link className="text-[#181789] hover:bg-[#560FF3]/80 hover:text-white px-4 py-2 rounded-lg transition-all duration-300" href={`/${lang}/services`}>{dict.services}</Link>
+            <Link className="text-[#181789] hover:bg-[#560FF3]/80 hover:text-white px-4 py-2 rounded-lg transition-all duration-300" href={`/${lang}/faq`}>{dict.faq}</Link>
+            <Link className="text-[#181789] hover:bg-[#560FF3]/80 hover:text-white px-4 py-2 rounded-lg transition-all duration-300" href={`/${lang}/contact`}>{dict.contact}</Link>
           </nav>
 
           {/* Header Actions */}
           <div className="flex items-center space-x-4">
+            {/* Language Toggle */}
+            <button
+              onClick={switchLanguage}
+              className="flex items-center space-x-1 text-[#181789] font-bold hover:bg-[#560FF3]/10 px-3 py-2 rounded-lg transition-colors border border-transparent hover:border-[#560FF3]/20"
+            >
+              <Globe size={20} />
+              <span className="text-sm">{lang === 'en' ? 'ES' : 'EN'}</span>
+            </button>
+
             {/* Header CTA - Hidden on mobile */}
             <Link className="hidden md:inline-block bg-gradient-to-r from-[#450CC2] to-[#2827E5] hover:from-[#560FF3] hover:to-[#560FF3] text-white px-6 py-2.5 rounded-lg text-sm font-semibold hover:opacity-90 hover:scale-105 transform transition-all duration-300 shadow-md" href="https://calendly.com/alejandro-torres-thecoreresources/30min?month=2026-05" target="_blank" rel="noopener noreferrer">
-              Book a Call
+              {dict.bookACall}
             </Link>
 
             {/* Hamburger Button - Visible only on mobile */}
@@ -74,11 +93,11 @@ export default function Navbar() {
           </button>
 
           <nav className="flex flex-col items-center space-y-10 text-white font-raleway text-[22px] font-light">
-            <Link href="/" onClick={() => setIsMobileMenuOpen(false)} className="underline underline-offset-8 decoration-2 font-semibold hover:text-gray-200 transition-colors">Home</Link>
-            <Link href="/about" onClick={() => setIsMobileMenuOpen(false)} className="hover:text-gray-200 transition-colors">About Core</Link>
-            <Link href="/buildTeams" onClick={() => setIsMobileMenuOpen(false)} className="hover:text-gray-200 transition-colors">Build Your Team</Link>
-            <Link href="/runOperations" onClick={() => setIsMobileMenuOpen(false)} className="hover:text-gray-200 transition-colors">Run Your Operations</Link>
-            <Link href="/contact" onClick={() => setIsMobileMenuOpen(false)} className="hover:text-gray-200 transition-colors">Contact</Link>
+            <Link href={`/${lang}/`} onClick={() => setIsMobileMenuOpen(false)} className="underline underline-offset-8 decoration-2 font-semibold hover:text-gray-200 transition-colors">{dict.home}</Link>
+            <Link href={`/${lang}/about`} onClick={() => setIsMobileMenuOpen(false)} className="hover:text-gray-200 transition-colors">{dict.aboutCore}</Link>
+            <Link href={`/${lang}/buildTeams`} onClick={() => setIsMobileMenuOpen(false)} className="hover:text-gray-200 transition-colors">{dict.buildYourTeam}</Link>
+            <Link href={`/${lang}/runOperations`} onClick={() => setIsMobileMenuOpen(false)} className="hover:text-gray-200 transition-colors">{dict.runOperations}</Link>
+            <Link href={`/${lang}/contact`} onClick={() => setIsMobileMenuOpen(false)} className="hover:text-gray-200 transition-colors">{dict.contact}</Link>
           </nav>
 
           <div className="absolute bottom-16">
@@ -89,7 +108,7 @@ export default function Navbar() {
               className="inline-block bg-white text-black px-8 py-3 rounded-xl font-bold uppercase tracking-wider text-sm shadow-xl hover:scale-105 transition-transform"
               onClick={() => setIsMobileMenuOpen(false)}
             >
-              BOOK A CALL
+              {dict.bookACall.toUpperCase()}
             </Link>
           </div>
         </div>
