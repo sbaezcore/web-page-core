@@ -43,9 +43,9 @@ export default function HomeContent({ dict, lang }: { dict: any, lang: string })
           <p className="text-black text-lg md:text-xl max-w-4xl mx-auto mb-4 font-medium">
             {dict.heroDesc1}
           </p>
-          <p className="text-black text-base md:text-lg max-w-3xl mx-auto mb-12">
+          {/* <p className="text-black text-base md:text-lg max-w-3xl mx-auto mb-12">
             {dict.heroDesc2}
-          </p>
+          </p> */}
         </FadeInSection>
 
         {/* Hero CTAs */}
@@ -62,9 +62,9 @@ export default function HomeContent({ dict, lang }: { dict: any, lang: string })
       </section>
 
       {/* SECTION 2: Intro before cards */}
-      <section id="solutions" className="max-w-4xl mx-auto px-8 py-12 text-center relative z-10">
+      <section id="solutions" className="max-w-4xl mx-auto px-8 py-12 text-center relative z-10 group cursor-default">
         <FadeInSection>
-          <h2 className="font-raleway font-bold text-[36px] md:text-[43px] leading-none text-black mb-6">{dict.howCanWeHelpTitle}</h2>
+          <h2 className="font-raleway font-bold text-[36px] md:text-[43px] leading-none text-black group-hover:text-[#560FF3] transition-colors duration-500 mb-6">{dict.howCanWeHelpTitle}</h2>
           <p className="text-black text-lg leading-relaxed">
             {dict.howCanWeHelpDesc}
           </p>
@@ -242,12 +242,13 @@ export default function HomeContent({ dict, lang }: { dict: any, lang: string })
           </FadeInSection>
 
           {/* Differentiators Blocks */}
-          <FadeInSection>
-            <h2 className="font-raleway font-bold text-[36px] md:text-[43px] leading-none mb-10 text-center text-black">
-              {dict.whatSetsUsApartTitle}
-            </h2>
-          </FadeInSection>
-          <div className="grid md:grid-cols-2 lg:grid-cols-4 gap-8">
+          <div className="group cursor-default pt-8">
+            <FadeInSection>
+              <h2 className="font-raleway font-bold text-[36px] md:text-[43px] leading-none mb-10 text-center text-black group-hover:text-[#560FF3] transition-colors duration-500">
+                {dict.whatSetsUsApartTitle}
+              </h2>
+            </FadeInSection>
+            <div className="grid md:grid-cols-2 lg:grid-cols-4 gap-8">
             <FadeInSection delay={0.1}>
               <div className="bg-white p-8 rounded-2xl shadow-sm border border-gray-100 hover:shadow-md transition-all h-full">
                 <div className="text-core-purple font-bold text-4xl mb-4 opacity-50">1</div>
@@ -277,14 +278,15 @@ export default function HomeContent({ dict, lang }: { dict: any, lang: string })
               </div>
             </FadeInSection>
           </div>
+          </div>
 
         </div>
       </section>
 
       {/* SECTION 5: Pain-based section */}
-      <section className="max-w-7xl mx-auto px-8 py-20 relative z-10 flex flex-col md:flex-row items-center gap-16">
+      <section className="max-w-7xl mx-auto px-8 py-20 relative z-10 flex flex-col md:flex-row items-center gap-16 group cursor-default">
         <FadeInSection className="w-full md:w-1/2">
-          <h2 className="font-raleway font-bold text-[36px] md:text-[43px] leading-none text-black mb-6">{dict.painTitle}</h2>
+          <h2 className="font-raleway font-bold text-[36px] md:text-[43px] leading-none text-black group-hover:text-[#560FF3] transition-colors duration-500 mb-6">{dict.painTitle}</h2>
           <p className="text-black text-lg leading-relaxed mb-6">
             {dict.painDesc1}
           </p>
