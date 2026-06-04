@@ -242,6 +242,11 @@ export default function HomeContent({ dict, lang }: { dict: any, lang: string })
           </FadeInSection>
 
           {/* Differentiators Blocks */}
+          <FadeInSection>
+            <h2 className="font-raleway font-bold text-[36px] md:text-[43px] leading-none mb-10 text-center text-black">
+              {dict.whatSetsUsApartTitle}
+            </h2>
+          </FadeInSection>
           <div className="grid md:grid-cols-2 lg:grid-cols-4 gap-8">
             <FadeInSection delay={0.1}>
               <div className="bg-white p-8 rounded-2xl shadow-sm border border-gray-100 hover:shadow-md transition-all h-full">

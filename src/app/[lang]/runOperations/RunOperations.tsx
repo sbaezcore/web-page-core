@@ -4,69 +4,70 @@ import { Workflow, CheckCircle2, BookOpen, Banknote, HandCoins, Network, FileTex
 import FadeInSection from '../../../components/FadeInSection';
 
 export default function RunOperationsContent({ dict }: { dict: any }) {
+  const t = dict;
   return (
     <main className="w-full mx-auto overflow-hidden">
       {/* Hero Section */}
-      <section className="relative pt-16 pb-16 md:pt-24 md:pb-20 px-6 xl:px-8 max-w-7xl mx-auto group">
+      <section className="relative pt-16 pb-16 md:pt-4 md:pb-20 px-6 xl:px-8 max-w-7xl mx-auto group">
         {/* Background Image with animation */}
-        <div className="absolute top-0 right-0 w-full h-[50%] lg:h-full lg:w-[55%] grayscale group-hover:grayscale-0 transition-all duration-500 [mask-image:linear-gradient(to_bottom,black_40%,transparent_100%)] lg:[mask-image:linear-gradient(to_right,transparent_0%,black_100%)] -z-10">
+        <div className="absolute top-0 right-0 w-full h-[50%] lg:h-[90%] lg:w-[55%] transition-all duration-500 [mask-image:linear-gradient(to_bottom,black_40%,transparent_100%)] lg:[mask-image:linear-gradient(to_right,transparent_0%,black_100%)] -z-10">
           <Image alt="Dashboard Laptop Mockup" src="/images/dashboard.webp" fill className="object-cover object-left" sizes="(max-width: 1024px) 100vw, 50vw" priority />
         </div>
 
         <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 items-center">
           <div className="flex flex-col gap-6 relative z-10 pt-48 lg:pt-0">
             <FadeInSection>
-              <h1 className="font-bold text-[32px] md:text-[32px] leading-[1.1] text-black tracking-tight">
-                Run your operations without hiring more people or losing control.
+              <h1 className="font-bold text-[32px] md:text-[32px] leading-[1.1] text-[#560FF3] tracking-tight">
+                {t.heroTitle}
               </h1>
             </FadeInSection>
             <FadeInSection delay={0.1}>
               <p className="font-bold text-lg text-black">
-                Core helps U.S. companies outsource administrative, finance, bookkeeping, payroll, contractor payment and back-office operations through structured BPO support.
+                {t.heroDesc1}
               </p>
             </FadeInSection>
             <FadeInSection delay={0.2}>
               <p className="text-[#4C4C4C] text-lg font-medium">
-                We help growing companies reduce operational workload, organize critical processes and give owners and teams more time to focus on sales, clients and growth.
+                {t.heroDesc2}
               </p>
             </FadeInSection>
 
-            <FadeInSection delay={0.3}>
+            {/* <FadeInSection delay={0.3}>
               <div className="mt-4">
-                <p className="font-bold text-black mb-4">Best fit for companies that need to:</p>
+                <p className="font-bold text-black mb-4">{t.bestFitTitle}</p>
                 <ul className="space-y-2 text-[#4C4C4C] text-lg font-medium">
                   <li className="flex items-start">
                     <span className="mr-2 text-gray-400">•</span>
-                    Free up time from administrative work.
+                    {t.bestFit1}
                   </li>
                   <li className="flex items-start">
                     <span className="mr-2 text-gray-400">•</span>
-                    Reduce operational costs without losing control.
+                    {t.bestFit2}
                   </li>
                   <li className="flex items-start">
                     <span className="mr-2 text-gray-400">•</span>
-                    Organize bookkeeping, payroll and finance processes.
+                    {t.bestFit3}
                   </li>
                   <li className="flex items-start">
                     <span className="mr-2 text-gray-400">•</span>
-                    Pay contractors consistently and compliantly.
+                    {t.bestFit4}
                   </li>
                   <li className="flex items-start">
                     <span className="mr-2 text-gray-400">•</span>
-                    Keep back-office tasks running month after month.
+                    {t.bestFit5}
                   </li>
                   <li className="flex items-start">
                     <span className="mr-2 text-gray-400">•</span>
-                    Allow owners and teams to focus on sales, clients and growth.
+                    {t.bestFit6}
                   </li>
                 </ul>
               </div>
-            </FadeInSection>
+            </FadeInSection> */}
 
-            <FadeInSection delay={0.4}>
+            <FadeInSection delay={0.3}>
               <div className="pt-4">
                 <Link href="/contact" className="inline-block bg-gradient-to-r from-[#450CC2] to-[#2827E5] hover:from-[#560FF3] hover:to-[#560FF3] text-white font-bold px-8 py-4 rounded-xl transition-all duration-300 transform origin-left hover:scale-105 shadow-lg shadow-indigo-500/30 hover:shadow-xl uppercase text-sm tracking-wide w-fit">
-                  START BUILDING YOUR TEAM
+                  {t.startBuildingBtn}
                 </Link>
               </div>
             </FadeInSection>
@@ -82,166 +83,178 @@ export default function RunOperationsContent({ dict }: { dict: any }) {
         <div className="max-w-4xl mx-auto text-center flex flex-col items-center">
           <FadeInSection>
             <div className="mb-8 flex justify-center">
-              <Workflow size={64} className="text-black" strokeWidth={1.5} />
+              <div className="relative">
+                <Workflow size={64} className="text-[#560FF3]" strokeWidth={1.5} />
+              </div>
             </div>
-            <h2 className="font-bold text-3xl md:text-4xl text-black mb-8">
-              Your business should not depend on you doing everything.
+            <h2 className="font-bold text-3xl md:text-4xl text-[#560FF3] mb-8">
+              {t.transitionTitle}
             </h2>
-            <div className="space-y-6 text-gray-700 text-lg">
-              <p>
-                As companies grow, operational work starts to pile up. Bookkeeping, payroll, contractor payments, administrative tasks, reporting, follow-ups and back-office processes become harder to manage internally.
-              </p>
-              <p>
-                At some point, the problem is not only lack of time. It is lack of structure.
-              </p>
-              <p>
-                Core helps U.S. companies delegate the operational work that keeps the business running, without building a full internal team or losing visibility over the process. Through CoreBooks and BPO support, we help your operation stay organized, up to date and compliant.
-              </p>
-              <p className="font-bold text-black pt-2">
-                You focus on growing the business. We help keep the operation moving.
-              </p>
+            <div className="space-y-6 text-gray-700 text-lg group cursor-default">
+              <p>{t.transitionP1}</p>
+              <p>{t.transitionP2}</p>
+              <p>{t.transitionP3}</p>
+              <div className="pt-2">
+                <p className="font-bold text-black px-6 py-4 rounded-xl transition-colors duration-500 group-hover:bg-[#560FF3] group-hover:text-white inline-block w-full">
+                  {t.transitionP4}
+                </p>
+              </div>
             </div>
           </FadeInSection>
         </div>
       </section>
 
       {/* Use Cases Section */}
-      <section className="py-24 px-6 xl:px-8 relative">
+      <section className="py-24 px-6 xl:px-8 relative group/section">
         <div className="max-w-6xl mx-auto">
           <FadeInSection>
-            <div className="text-center mb-16">
-              <h2 className="font-bold text-3xl md:text-4xl text-[#6225E6] mb-4">
-                What operational challenge are you trying to solve?
-              </h2>
-              <p className="font-bold text-black text-lg max-w-3xl mx-auto">
-                You may not need a full internal department. You may need the right operational support behind the business. Core starts with the problem, then connects it with the right outsourced solution.
-              </p>
+            <div className="text-center mb-16 cursor-default">
+              <div className="w-[100vw] relative left-1/2 -translate-x-1/2 bg-[#333333] group-hover/section:bg-[#560FF3] transition-colors duration-500 py-8">
+                <h2 className="font-bold text-3xl md:text-4xl text-white">
+                  {t.useCasesTitle}
+                </h2>
+              </div>
             </div>
           </FadeInSection>
 
           <div className="space-y-12">
             {/* Row 1 */}
             <FadeInSection>
-              <div className="grid grid-cols-1 lg:grid-cols-2 gap-8 items-center">
-                <div>
-                  <h3 className="font-bold text-2xl text-black mb-4">Get control of your back office</h3>
-                  <p className="text-gray-700 mb-4">
-                    Your business is growing, but admin tasks, documents, follow-ups and internal processes are scattered. Things get done, but not always with the structure or consistency you need.
-                  </p>
-                  <p className="text-gray-700">
-                    Core helps organize and run back-office tasks so your business can operate with more clarity, control and continuity.
-                  </p>
-                </div>
-                <div className="bg-white rounded-[2rem] p-8 shadow-sm border border-gray-100">
-                  <h4 className="font-bold text-black text-right mb-6">Services that may include:</h4>
-                  <ul className="space-y-3 font-medium">
-                    <li className="flex items-center text-gray-800"><span className="w-1.5 h-1.5 bg-black rounded-full mr-3 shrink-0"></span>Back-Office Support</li>
-                    <li className="flex items-center text-gray-800"><span className="w-1.5 h-1.5 bg-black rounded-full mr-3 shrink-0"></span>Administrative Support</li>
-                    <li className="flex items-center text-gray-800"><span className="w-1.5 h-1.5 bg-black rounded-full mr-3 shrink-0"></span>Operational process support</li>
-                    <li className="flex items-center text-gray-800"><span className="w-1.5 h-1.5 bg-black rounded-full mr-3 shrink-0"></span>Document coordination</li>
-                    <li className="flex items-center text-gray-800"><span className="w-1.5 h-1.5 bg-black rounded-full mr-3 shrink-0"></span>Ongoing task management</li>
-                  </ul>
+              <div className="bg-gray-100/50 rounded-[2.5rem] p-6 lg:p-10 group transition-all duration-300 hover:shadow-lg cursor-default">
+                <div className="grid grid-cols-1 lg:grid-cols-2 gap-8 lg:gap-16 items-center">
+                  <div>
+                    <h3 className="font-bold text-2xl text-black group-hover:text-[#560FF3] transition-colors duration-300 mb-4">{t.uc1Title}</h3>
+                    <p className="text-gray-700 mb-4">{t.uc1P1}</p>
+                    <p className="text-gray-700">{t.uc1P2}</p>
+                  </div>
+                  <div className="bg-white group-hover:bg-[#560FF3] transition-colors duration-300 rounded-[2rem] p-8 shadow-sm flex flex-col h-full border border-transparent">
+                    <h4 className="font-bold text-black group-hover:text-white transition-colors duration-300 text-right mb-6">{t.servicesMayInclude}</h4>
+                    <ul className="space-y-3 font-medium flex-grow">
+                      <li className="flex items-center text-gray-800 group-hover:text-white transition-colors duration-300"><span className="w-1.5 h-1.5 bg-black group-hover:bg-white rounded-full mr-3 shrink-0 transition-colors duration-300"></span>{t.uc1S1}</li>
+                      <li className="flex items-center text-gray-800 group-hover:text-white transition-colors duration-300"><span className="w-1.5 h-1.5 bg-black group-hover:bg-white rounded-full mr-3 shrink-0 transition-colors duration-300"></span>{t.uc1S2}</li>
+                      <li className="flex items-center text-gray-800 group-hover:text-white transition-colors duration-300"><span className="w-1.5 h-1.5 bg-black group-hover:bg-white rounded-full mr-3 shrink-0 transition-colors duration-300"></span>{t.uc1S3}</li>
+                      <li className="flex items-center text-gray-800 group-hover:text-white transition-colors duration-300"><span className="w-1.5 h-1.5 bg-black group-hover:bg-white rounded-full mr-3 shrink-0 transition-colors duration-300"></span>{t.uc1S4}</li>
+                      <li className="flex items-center text-gray-800 group-hover:text-white transition-colors duration-300"><span className="w-1.5 h-1.5 bg-black group-hover:bg-white rounded-full mr-3 shrink-0 transition-colors duration-300"></span>{t.uc1S5}</li>
+                    </ul>
+                    <div className="mt-8 text-right opacity-0 group-hover:opacity-100 transition-opacity duration-300">
+                      <span className="inline-block border border-white text-white rounded-lg px-4 py-2 font-medium text-sm">
+                        {dict.nav?.home === "Inicio" ? "Ver Servicios Relacionados" : "See Related Services"}
+                      </span>
+                    </div>
+                  </div>
                 </div>
               </div>
             </FadeInSection>
 
             {/* Row 2 */}
             <FadeInSection>
-              <div className="grid grid-cols-1 lg:grid-cols-2 gap-8 items-center">
-                <div>
-                  <h3 className="font-bold text-2xl text-black mb-4">Fix your financial operations</h3>
-                  <p className="text-gray-700 mb-4">
-                    If bookkeeping, reconciliations, financial records or reporting are delayed or inconsistent, it becomes harder to make decisions and understand how the business is really performing.
-                  </p>
-                  <p className="text-gray-700">
-                    CoreBooks helps keep your financial operations organized, updated and easier to manage month after month.
-                  </p>
-                </div>
-                <div className="bg-white rounded-[2rem] p-8 shadow-sm border border-gray-100">
-                  <h4 className="font-bold text-black text-right mb-6">Services that may include:</h4>
-                  <ul className="space-y-3 font-medium">
-                    <li className="flex items-center text-gray-800"><span className="w-1.5 h-1.5 bg-black rounded-full mr-3 shrink-0"></span>Bookkeeping</li>
-                    <li className="flex items-center text-gray-800"><span className="w-1.5 h-1.5 bg-black rounded-full mr-3 shrink-0"></span>Finance Support</li>
-                    <li className="flex items-center text-gray-800"><span className="w-1.5 h-1.5 bg-black rounded-full mr-3 shrink-0"></span>Reporting support</li>
-                    <li className="flex items-center text-gray-800"><span className="w-1.5 h-1.5 bg-black rounded-full mr-3 shrink-0"></span>Account reconciliation support</li>
-                    <li className="flex items-center text-gray-800"><span className="w-1.5 h-1.5 bg-black rounded-full mr-3 shrink-0"></span>Administrative finance tasks</li>
-                  </ul>
+              <div className="bg-gray-100/50 rounded-[2.5rem] p-6 lg:p-10 group transition-all duration-300 hover:shadow-lg cursor-default">
+                <div className="grid grid-cols-1 lg:grid-cols-2 gap-8 lg:gap-16 items-center">
+                  <div>
+                    <h3 className="font-bold text-2xl text-black group-hover:text-[#560FF3] transition-colors duration-300 mb-4">{t.uc2Title}</h3>
+                    <p className="text-gray-700 mb-4">{t.uc2P1}</p>
+                    <p className="text-gray-700">{t.uc2P2}</p>
+                  </div>
+                  <div className="bg-white group-hover:bg-[#560FF3] transition-colors duration-300 rounded-[2rem] p-8 shadow-sm flex flex-col h-full border border-transparent">
+                    <h4 className="font-bold text-black group-hover:text-white transition-colors duration-300 text-right mb-6">{t.servicesMayInclude}</h4>
+                    <ul className="space-y-3 font-medium flex-grow">
+                      <li className="flex items-center text-gray-800 group-hover:text-white transition-colors duration-300"><span className="w-1.5 h-1.5 bg-black group-hover:bg-white rounded-full mr-3 shrink-0 transition-colors duration-300"></span>{t.uc2S1}</li>
+                      <li className="flex items-center text-gray-800 group-hover:text-white transition-colors duration-300"><span className="w-1.5 h-1.5 bg-black group-hover:bg-white rounded-full mr-3 shrink-0 transition-colors duration-300"></span>{t.uc2S2}</li>
+                      <li className="flex items-center text-gray-800 group-hover:text-white transition-colors duration-300"><span className="w-1.5 h-1.5 bg-black group-hover:bg-white rounded-full mr-3 shrink-0 transition-colors duration-300"></span>{t.uc2S3}</li>
+                      <li className="flex items-center text-gray-800 group-hover:text-white transition-colors duration-300"><span className="w-1.5 h-1.5 bg-black group-hover:bg-white rounded-full mr-3 shrink-0 transition-colors duration-300"></span>{t.uc2S4}</li>
+                      <li className="flex items-center text-gray-800 group-hover:text-white transition-colors duration-300"><span className="w-1.5 h-1.5 bg-black group-hover:bg-white rounded-full mr-3 shrink-0 transition-colors duration-300"></span>{t.uc2S5}</li>
+                    </ul>
+                    <div className="mt-8 text-right opacity-0 group-hover:opacity-100 transition-opacity duration-300">
+                      <span className="inline-block border border-white text-white rounded-lg px-4 py-2 font-medium text-sm">
+                        {dict.nav?.home === "Inicio" ? "Ver Servicios Relacionados" : "See Related Services"}
+                      </span>
+                    </div>
+                  </div>
                 </div>
               </div>
             </FadeInSection>
 
             {/* Row 3 */}
             <FadeInSection>
-              <div className="grid grid-cols-1 lg:grid-cols-2 gap-8 items-center">
-                <div>
-                  <h3 className="font-bold text-2xl text-black mb-4">Delegate payroll and contractor payments</h3>
-                  <p className="text-gray-700 mb-4">
-                    Paying employees, contractors or remote teams can become time-consuming and sensitive. Mistakes, delays or lack of structure can create unnecessary risk and frustration.
-                  </p>
-                  <p className="text-gray-700">
-                    Core helps manage payroll and contractor payment processes with consistency, control and compliance-minded execution.
-                  </p>
-                </div>
-                <div className="bg-white rounded-[2rem] p-8 shadow-sm border border-gray-100">
-                  <h4 className="font-bold text-black text-right mb-6">Services that may include:</h4>
-                  <ul className="space-y-3 font-medium">
-                    <li className="flex items-center text-gray-800"><span className="w-1.5 h-1.5 bg-black rounded-full mr-3 shrink-0"></span>Payroll Services</li>
-                    <li className="flex items-center text-gray-800"><span className="w-1.5 h-1.5 bg-black rounded-full mr-3 shrink-0"></span>Contractor Payments</li>
-                    <li className="flex items-center text-gray-800"><span className="w-1.5 h-1.5 bg-black rounded-full mr-3 shrink-0"></span>Payment coordination</li>
-                    <li className="flex items-center text-gray-800"><span className="w-1.5 h-1.5 bg-black rounded-full mr-3 shrink-0"></span>Administrative support</li>
-                    <li className="flex items-center text-gray-800"><span className="w-1.5 h-1.5 bg-black rounded-full mr-3 shrink-0"></span>Compliance-minded process support</li>
-                  </ul>
+              <div className="bg-gray-100/50 rounded-[2.5rem] p-6 lg:p-10 group transition-all duration-300 hover:shadow-lg cursor-default">
+                <div className="grid grid-cols-1 lg:grid-cols-2 gap-8 lg:gap-16 items-center">
+                  <div>
+                    <h3 className="font-bold text-2xl text-black group-hover:text-[#560FF3] transition-colors duration-300 mb-4">{t.uc3Title}</h3>
+                    <p className="text-gray-700 mb-4">{t.uc3P1}</p>
+                    <p className="text-gray-700">{t.uc3P2}</p>
+                  </div>
+                  <div className="bg-white group-hover:bg-[#560FF3] transition-colors duration-300 rounded-[2rem] p-8 shadow-sm flex flex-col h-full border border-transparent">
+                    <h4 className="font-bold text-black group-hover:text-white transition-colors duration-300 text-right mb-6">{t.servicesMayInclude}</h4>
+                    <ul className="space-y-3 font-medium flex-grow">
+                      <li className="flex items-center text-gray-800 group-hover:text-white transition-colors duration-300"><span className="w-1.5 h-1.5 bg-black group-hover:bg-white rounded-full mr-3 shrink-0 transition-colors duration-300"></span>{t.uc3S1}</li>
+                      <li className="flex items-center text-gray-800 group-hover:text-white transition-colors duration-300"><span className="w-1.5 h-1.5 bg-black group-hover:bg-white rounded-full mr-3 shrink-0 transition-colors duration-300"></span>{t.uc3S2}</li>
+                      <li className="flex items-center text-gray-800 group-hover:text-white transition-colors duration-300"><span className="w-1.5 h-1.5 bg-black group-hover:bg-white rounded-full mr-3 shrink-0 transition-colors duration-300"></span>{t.uc3S3}</li>
+                      <li className="flex items-center text-gray-800 group-hover:text-white transition-colors duration-300"><span className="w-1.5 h-1.5 bg-black group-hover:bg-white rounded-full mr-3 shrink-0 transition-colors duration-300"></span>{t.uc3S4}</li>
+                      <li className="flex items-center text-gray-800 group-hover:text-white transition-colors duration-300"><span className="w-1.5 h-1.5 bg-black group-hover:bg-white rounded-full mr-3 shrink-0 transition-colors duration-300"></span>{t.uc3S5}</li>
+                    </ul>
+                    <div className="mt-8 text-right opacity-0 group-hover:opacity-100 transition-opacity duration-300">
+                      <span className="inline-block border border-white text-white rounded-lg px-4 py-2 font-medium text-sm">
+                        {dict.nav?.home === "Inicio" ? "Ver Servicios Relacionados" : "See Related Services"}
+                      </span>
+                    </div>
+                  </div>
                 </div>
               </div>
             </FadeInSection>
 
             {/* Row 4 */}
             <FadeInSection>
-              <div className="grid grid-cols-1 lg:grid-cols-2 gap-8 items-center">
-                <div>
-                  <h3 className="font-bold text-2xl text-black mb-4">Reduce operational workload</h3>
-                  <p className="text-gray-700 mb-4">
-                    When owners or internal teams spend too much time on administrative work, the business loses focus. Sales, client service and growth initiatives get pushed aside.
-                  </p>
-                  <p className="text-gray-700">
-                    Core helps take recurring operational tasks off your team's plate, giving them more time to focus on higher-value work.
-                  </p>
-                </div>
-                <div className="bg-white rounded-[2rem] p-8 shadow-sm border border-gray-100">
-                  <h4 className="font-bold text-black text-right mb-6">Services that may include:</h4>
-                  <ul className="space-y-3 font-medium">
-                    <li className="flex items-center text-gray-800"><span className="w-1.5 h-1.5 bg-black rounded-full mr-3 shrink-0"></span>Administrative Support</li>
-                    <li className="flex items-center text-gray-800"><span className="w-1.5 h-1.5 bg-black rounded-full mr-3 shrink-0"></span>BPO Support</li>
-                    <li className="flex items-center text-gray-800"><span className="w-1.5 h-1.5 bg-black rounded-full mr-3 shrink-0"></span>Back-Office Support</li>
-                    <li className="flex items-center text-gray-800"><span className="w-1.5 h-1.5 bg-black rounded-full mr-3 shrink-0"></span>Finance Support</li>
-                    <li className="flex items-center text-gray-800"><span className="w-1.5 h-1.5 bg-black rounded-full mr-3 shrink-0"></span>Recurring task management</li>
-                  </ul>
+              <div className="bg-gray-100/50 rounded-[2.5rem] p-6 lg:p-10 group transition-all duration-300 hover:shadow-lg cursor-default">
+                <div className="grid grid-cols-1 lg:grid-cols-2 gap-8 lg:gap-16 items-center">
+                  <div>
+                    <h3 className="font-bold text-2xl text-black group-hover:text-[#560FF3] transition-colors duration-300 mb-4">{t.uc4Title}</h3>
+                    <p className="text-gray-700 mb-4">{t.uc4P1}</p>
+                    <p className="text-gray-700">{t.uc4P2}</p>
+                  </div>
+                  <div className="bg-white group-hover:bg-[#560FF3] transition-colors duration-300 rounded-[2rem] p-8 shadow-sm flex flex-col h-full border border-transparent">
+                    <h4 className="font-bold text-black group-hover:text-white transition-colors duration-300 text-right mb-6">{t.servicesMayInclude}</h4>
+                    <ul className="space-y-3 font-medium flex-grow">
+                      <li className="flex items-center text-gray-800 group-hover:text-white transition-colors duration-300"><span className="w-1.5 h-1.5 bg-black group-hover:bg-white rounded-full mr-3 shrink-0 transition-colors duration-300"></span>{t.uc4S1}</li>
+                      <li className="flex items-center text-gray-800 group-hover:text-white transition-colors duration-300"><span className="w-1.5 h-1.5 bg-black group-hover:bg-white rounded-full mr-3 shrink-0 transition-colors duration-300"></span>{t.uc4S2}</li>
+                      <li className="flex items-center text-gray-800 group-hover:text-white transition-colors duration-300"><span className="w-1.5 h-1.5 bg-black group-hover:bg-white rounded-full mr-3 shrink-0 transition-colors duration-300"></span>{t.uc4S3}</li>
+                      <li className="flex items-center text-gray-800 group-hover:text-white transition-colors duration-300"><span className="w-1.5 h-1.5 bg-black group-hover:bg-white rounded-full mr-3 shrink-0 transition-colors duration-300"></span>{t.uc4S4}</li>
+                      <li className="flex items-center text-gray-800 group-hover:text-white transition-colors duration-300"><span className="w-1.5 h-1.5 bg-black group-hover:bg-white rounded-full mr-3 shrink-0 transition-colors duration-300"></span>{t.uc4S5}</li>
+                    </ul>
+                    <div className="mt-8 text-right opacity-0 group-hover:opacity-100 transition-opacity duration-300">
+                      <span className="inline-block border border-white text-white rounded-lg px-4 py-2 font-medium text-sm">
+                        {dict.nav?.home === "Inicio" ? "Ver Servicios Relacionados" : "See Related Services"}
+                      </span>
+                    </div>
+                  </div>
                 </div>
               </div>
             </FadeInSection>
 
             {/* Row 5 */}
             <FadeInSection>
-              <div className="grid grid-cols-1 lg:grid-cols-2 gap-8 items-center">
-                <div>
-                  <h3 className="font-bold text-2xl text-black mb-4">Scale operations without building a full internal team</h3>
-                  <p className="text-gray-700 mb-4">
-                    Your company may need more operational capacity, but not necessarily a full finance, admin, payroll or back-office department in the U.S.
-                  </p>
-                  <p className="text-gray-700">
-                    Core helps you build an outsourced operations structure that supports growth without increasing internal complexity or fixed overhead.
-                  </p>
-                </div>
-                <div className="bg-white rounded-[2rem] p-8 shadow-sm border border-gray-100">
-                  <h4 className="font-bold text-black text-right mb-6">Services that may include:</h4>
-                  <ul className="space-y-3 font-medium">
-                    <li className="flex items-center text-gray-800"><span className="w-1.5 h-1.5 bg-black rounded-full mr-3 shrink-0"></span>BPO / Back-Office Support</li>
-                    <li className="flex items-center text-gray-800"><span className="w-1.5 h-1.5 bg-black rounded-full mr-3 shrink-0"></span>Bookkeeping</li>
-                    <li className="flex items-center text-gray-800"><span className="w-1.5 h-1.5 bg-black rounded-full mr-3 shrink-0"></span>Payroll Services</li>
-                    <li className="flex items-center text-gray-800"><span className="w-1.5 h-1.5 bg-black rounded-full mr-3 shrink-0"></span>Contractor Payments</li>
-                    <li className="flex items-center text-gray-800"><span className="w-1.5 h-1.5 bg-black rounded-full mr-3 shrink-0"></span>Administrative Support</li>
-                    <li className="flex items-center text-gray-800"><span className="w-1.5 h-1.5 bg-black rounded-full mr-3 shrink-0"></span>Finance Support</li>
-                  </ul>
+              <div className="bg-gray-100/50 rounded-[2.5rem] p-6 lg:p-10 group transition-all duration-300 hover:shadow-lg cursor-default">
+                <div className="grid grid-cols-1 lg:grid-cols-2 gap-8 lg:gap-16 items-center">
+                  <div>
+                    <h3 className="font-bold text-2xl text-black group-hover:text-[#560FF3] transition-colors duration-300 mb-4">{t.uc5Title}</h3>
+                    <p className="text-gray-700 mb-4">{t.uc5P1}</p>
+                    <p className="text-gray-700">{t.uc5P2}</p>
+                  </div>
+                  <div className="bg-white group-hover:bg-[#560FF3] transition-colors duration-300 rounded-[2rem] p-8 shadow-sm flex flex-col h-full border border-transparent">
+                    <h4 className="font-bold text-black group-hover:text-white transition-colors duration-300 text-right mb-6">{t.servicesMayInclude}</h4>
+                    <ul className="space-y-3 font-medium flex-grow">
+                      <li className="flex items-center text-gray-800 group-hover:text-white transition-colors duration-300"><span className="w-1.5 h-1.5 bg-black group-hover:bg-white rounded-full mr-3 shrink-0 transition-colors duration-300"></span>{t.uc5S1}</li>
+                      <li className="flex items-center text-gray-800 group-hover:text-white transition-colors duration-300"><span className="w-1.5 h-1.5 bg-black group-hover:bg-white rounded-full mr-3 shrink-0 transition-colors duration-300"></span>{t.uc5S2}</li>
+                      <li className="flex items-center text-gray-800 group-hover:text-white transition-colors duration-300"><span className="w-1.5 h-1.5 bg-black group-hover:bg-white rounded-full mr-3 shrink-0 transition-colors duration-300"></span>{t.uc5S3}</li>
+                      <li className="flex items-center text-gray-800 group-hover:text-white transition-colors duration-300"><span className="w-1.5 h-1.5 bg-black group-hover:bg-white rounded-full mr-3 shrink-0 transition-colors duration-300"></span>{t.uc5S4}</li>
+                      <li className="flex items-center text-gray-800 group-hover:text-white transition-colors duration-300"><span className="w-1.5 h-1.5 bg-black group-hover:bg-white rounded-full mr-3 shrink-0 transition-colors duration-300"></span>{t.uc5S5}</li>
+                      <li className="flex items-center text-gray-800 group-hover:text-white transition-colors duration-300"><span className="w-1.5 h-1.5 bg-black group-hover:bg-white rounded-full mr-3 shrink-0 transition-colors duration-300"></span>{t.uc5S6}</li>
+                    </ul>
+                    <div className="mt-8 text-right opacity-0 group-hover:opacity-100 transition-opacity duration-300">
+                      <span className="inline-block border border-white text-white rounded-lg px-4 py-2 font-medium text-sm">
+                        {dict.nav?.home === "Inicio" ? "Ver Servicios Relacionados" : "See Related Services"}
+                      </span>
+                    </div>
+                  </div>
                 </div>
               </div>
             </FadeInSection>
@@ -251,63 +264,71 @@ export default function RunOperationsContent({ dict }: { dict: any }) {
       </section>
 
       {/* Bottom Services Grid */}
-      <section className="py-24 px-6 xl:px-8 relative">
-        <div className="max-w-7xl mx-auto">
-          <FadeInSection>
-            <h2 className="text-center font-bold text-2xl md:text-3xl text-[#6225E6] mb-12">
-              Outsourced operations designed to keep your business organized and moving.
-            </h2>
-          </FadeInSection>
+      <section className="pb-24 relative group/bottom transition-all duration-500 bg-[#F4F4F4] hover:bg-gradient-to-b hover:from-[#11D7A4] hover:via-[#D3CAFA] hover:to-[#F4F4F4]">
+        <div className="w-full bg-[#333333] group-hover/bottom:bg-[#0A5240] transition-colors duration-500 py-6 mb-16">
+          <h2 className="text-center font-bold text-2xl md:text-3xl text-white px-4">
+            {t.bottomTitle}
+          </h2>
+        </div>
 
+        <div className="max-w-7xl mx-auto px-6 xl:px-8">
           <div className="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-6 gap-6">
             <FadeInSection delay={0.1} className="h-full">
               {/* Card 1 */}
-              <div className="bg-white/60 backdrop-blur-sm rounded-3xl p-6 flex flex-col items-center justify-center text-center aspect-[4/5] shadow-sm hover:shadow-md transition-all border border-white/40 h-full">
-                <BookOpen size={36} className="text-gray-600 mb-6" strokeWidth={1.5} />
-                <p className="text-sm font-medium text-gray-600">Bookkeeping</p>
+              <div className="bg-white rounded-3xl p-6 flex flex-col items-center justify-center text-center aspect-[4/5] shadow-sm transition-all duration-300 border border-transparent h-full group/card hover:bg-[#0FA986] hover:scale-105 hover:shadow-xl cursor-default">
+                <BookOpen size={36} className="text-gray-600 group-hover/card:text-white mb-6 transition-colors duration-300" strokeWidth={1.5} />
+                <p className="text-sm font-medium text-gray-500 group-hover/card:text-white transition-colors duration-300">{t.card1}</p>
               </div>
             </FadeInSection>
 
             <FadeInSection delay={0.2} className="h-full">
               {/* Card 2 */}
-              <div className="bg-white/60 backdrop-blur-sm rounded-3xl p-6 flex flex-col items-center justify-center text-center aspect-[4/5] shadow-sm hover:shadow-md transition-all border border-white/40 h-full">
-                <Banknote size={36} className="text-gray-600 mb-6" strokeWidth={1.5} />
-                <p className="text-sm font-medium text-gray-600">Payroll Services</p>
+              <div className="bg-white rounded-3xl p-6 flex flex-col items-center justify-center text-center aspect-[4/5] shadow-sm transition-all duration-300 border border-transparent h-full group/card hover:bg-[#0FA986] hover:scale-105 hover:shadow-xl cursor-default">
+                <Banknote size={36} className="text-gray-600 group-hover/card:text-white mb-6 transition-colors duration-300" strokeWidth={1.5} />
+                <p className="text-sm font-medium text-gray-500 group-hover/card:text-white transition-colors duration-300">{t.card2}</p>
               </div>
             </FadeInSection>
 
             <FadeInSection delay={0.3} className="h-full">
               {/* Card 3 */}
-              <div className="bg-white/60 backdrop-blur-sm rounded-3xl p-6 flex flex-col items-center justify-center text-center aspect-[4/5] shadow-sm hover:shadow-md transition-all border border-white/40 h-full">
-                <HandCoins size={36} className="text-gray-600 mb-6" strokeWidth={1.5} />
-                <p className="text-sm font-medium text-gray-600">Contractor Payments</p>
+              <div className="bg-white rounded-3xl p-6 flex flex-col items-center justify-center text-center aspect-[4/5] shadow-sm transition-all duration-300 border border-transparent h-full group/card hover:bg-[#0FA986] hover:scale-105 hover:shadow-xl cursor-default">
+                <HandCoins size={36} className="text-gray-600 group-hover/card:text-white mb-6 transition-colors duration-300" strokeWidth={1.5} />
+                <p className="text-sm font-medium text-gray-500 group-hover/card:text-white transition-colors duration-300">{t.card3}</p>
               </div>
             </FadeInSection>
 
             <FadeInSection delay={0.4} className="h-full">
               {/* Card 4 */}
-              <div className="bg-white/60 backdrop-blur-sm rounded-3xl p-6 flex flex-col items-center justify-center text-center aspect-[4/5] shadow-sm hover:shadow-md transition-all border border-white/40 h-full">
-                <Network size={36} className="text-gray-600 mb-6" strokeWidth={1.5} />
-                <p className="text-sm font-medium text-gray-600 leading-tight">BPO / Back-Office Support</p>
+              <div className="bg-white rounded-3xl p-6 flex flex-col items-center justify-center text-center aspect-[4/5] shadow-sm transition-all duration-300 border border-transparent h-full group/card hover:bg-[#0FA986] hover:scale-105 hover:shadow-xl cursor-default">
+                <Network size={36} className="text-gray-600 group-hover/card:text-white mb-6 transition-colors duration-300" strokeWidth={1.5} />
+                <p className="text-sm font-medium text-gray-500 group-hover/card:text-white leading-tight transition-colors duration-300">{t.card4}</p>
               </div>
             </FadeInSection>
 
             <FadeInSection delay={0.5} className="h-full">
               {/* Card 5 */}
-              <div className="bg-white/60 backdrop-blur-sm rounded-3xl p-6 flex flex-col items-center justify-center text-center aspect-[4/5] shadow-sm hover:shadow-md transition-all border border-white/40 h-full">
-                <FileText size={36} className="text-gray-600 mb-6" strokeWidth={1.5} />
-                <p className="text-sm font-medium text-gray-600">Administrative Support</p>
+              <div className="bg-white rounded-3xl p-6 flex flex-col items-center justify-center text-center aspect-[4/5] shadow-sm transition-all duration-300 border border-transparent h-full group/card hover:bg-[#0FA986] hover:scale-105 hover:shadow-xl cursor-default">
+                <FileText size={36} className="text-gray-600 group-hover/card:text-white mb-6 transition-colors duration-300" strokeWidth={1.5} />
+                <p className="text-sm font-medium text-gray-500 group-hover/card:text-white transition-colors duration-300">{t.card5}</p>
               </div>
             </FadeInSection>
 
             <FadeInSection delay={0.6} className="h-full">
               {/* Card 6 */}
-              <div className="bg-white/60 backdrop-blur-sm rounded-3xl p-6 flex flex-col items-center justify-center text-center aspect-[4/5] shadow-sm hover:shadow-md transition-all border border-white/40 h-full">
-                <TrendingUp size={36} className="text-gray-600 mb-6" strokeWidth={1.5} />
-                <p className="text-sm font-medium text-gray-600">Finance Support</p>
+              <div className="bg-white rounded-3xl p-6 flex flex-col items-center justify-center text-center aspect-[4/5] shadow-sm transition-all duration-300 border border-transparent h-full group/card hover:bg-[#0FA986] hover:scale-105 hover:shadow-xl cursor-default">
+                <TrendingUp size={36} className="text-gray-600 group-hover/card:text-white mb-6 transition-colors duration-300" strokeWidth={1.5} />
+                <p className="text-sm font-medium text-gray-500 group-hover/card:text-white transition-colors duration-300">{t.card6}</p>
               </div>
             </FadeInSection>
           </div>
+
+          <FadeInSection delay={0.7}>
+            <div className="text-center mt-12">
+              <Link href="/services" className="inline-block border border-black rounded-lg px-8 py-3 font-bold text-sm hover:bg-black hover:text-white transition-colors bg-transparent">
+                {dict.nav?.home === "Inicio" ? "VER TODOS LOS SERVICIOS" : "SEE ALL SERVICES"}
+              </Link>
+            </div>
+          </FadeInSection>
         </div>
       </section>
     </main>

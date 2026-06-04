@@ -19,7 +19,7 @@ export const en = {
     privacyPolicy: "Privacy Policy",
     termsOfService: "Terms of Service"
   },
-  
+
   buildTeams: {
     heroTitle: "Build the team you need without hiring friction, legal complexity or unnecessary overhead.",
     heroDesc1: "Core helps U.S. companies recruit, hire, staff and manage qualified talent across Latin America and global markets through flexible talent solutions.",
@@ -172,10 +172,11 @@ export const en = {
     runOpsTitle2: "OPERATIONS",
     runOpsDesc: "Delegate bookkeeping, payroll, contractor payments, admin, finance and back-office operations.",
     seeOperationalBtn: "See Operational Solutions",
-    onePartnerTitle: "One partner to help you scale people and operations.",
-    onePartnerDesc1: "Core Resources is more than a recruiting partner, a staffing provider or a BPO company. We help U.S. companies design practical, cost-efficient ways to grow through talent solutions and outsourced operations.",
-    onePartnerDesc2: "Our role is to simplify the path from business need to execution: understanding what your company requires, finding the right talent or operational structure, and supporting the work over time so your business can keep moving forward.",
+    onePartnerTitle: "One partner to help you scale.",
+    onePartnerDesc1: " Core Resources helps U.S. companies grow through practical, cost-efficient talent solutions and outsourced operations. We simplify the path from business need to execution by understanding what your company requires, building the right talent or operational structure, and supporting the work over time so your business can keep moving forward.",
+    // onePartnerDesc2: "Our role is to simplify the path from business need to execution: understanding what your company requires, finding the right talent or operational structure, and supporting the work over time so your business can keep moving forward.",
     aboutUsLink: "About us",
+    whatSetsUsApartTitle: "What sets us apart",
     diff1Title: "Built around your business need",
     diff1Desc: "We do not start with a generic service list. We start with the problem you need to solve: hiring, workload, cost reduction, operational control, compliance or growth.",
     diff2Title: "Talent and operations under one structure",
@@ -217,5 +218,77 @@ export const en = {
     opsService5: "• Administrative Support",
     opsService6: "• Finance Support",
     opsService7: "• Operational process support"
+  },
+  servicesPage: {
+    heroTitle: "Services",
+    heroDesc1: "We have the perfect solution for you. \"",
+    heroDesc2: "Build Your Team",
+    heroDesc3: "\" adapts to your specific hiring needs, while \"",
+    heroDesc4: "Run Your Operations",
+    heroDesc5: "\" takes care of your support and financial processes, ensuring your business stays organized, agile, and moving forward.",
+    buildTeamTitle: "Build Your Team",
+    buildTeam: {
+      s1Title: "Recruitment & Selection",
+      s1Desc: "We help you find and evaluate qualified candidates for long-term or strategic roles, focusing on talent that matches your technical requirements, culture, communication needs and business goals.",
+      s1Best: "Best for:",
+      s1BestDesc: "Companies that need to hire permanent or long-term talent outside the U.S. market.",
+      
+      s2Title: "Staffing",
+      s2Desc: "We help you cover temporary, project-based or flexible roles with qualified professionals, giving your company the capacity it needs without unnecessary long-term commitments.",
+      s2Best: "Best for:",
+      s2BestDesc: "Companies that need fast support for a specific role, workload or project.",
+      
+      s3Title: "Employer of Record",
+      s3Desc: "Hire talent abroad legally without opening a local entity.\n\nWhen you need to employ talent in another country but do not have a local entity, Core can support the hiring structure through an Employer of Record solution, helping reduce legal and administrative complexity.",
+      s3Best: "Best for:",
+      s3BestDesc: "Companies that want to hire international talent without setting up a local company.",
+      
+      s4Title: "Staff Augmentation",
+      s4Desc: "We help you strengthen your existing team with external professionals who bring additional capacity, specialized skills or project support while working alongside your internal team.",
+      s4Best: "Best for:",
+      s4BestDesc: "Companies that already have a team but need more capacity or specific expertise.",
+      
+      s5Title: "Employment Visa Services",
+      s5Desc: "We support companies with employment-related visa processes in Mexico, helping coordinate documentation, administrative steps and process guidance when relocating or hiring foreign talent.",
+      s5Best: "Best for:",
+      s5BestDesc: "Companies that need to manage employment visa requirements connected to Mexico.",
+      
+      s6Title: "Hiring, onboarding and ongoing support",
+      s6Desc: "Core supports the process beyond candidate search. We help with hiring setup, onboarding coordination and ongoing support so the talent solution works consistently over time.",
+      s6Best: "Best for:",
+      s6BestDesc: "Companies that want a partner, not just a candidate list."
+    },
+    runOpsTitle: "Run Your Operations",
+    runOps: {
+      s1Title: "Bookkeeping",
+      s1Desc: "We help keep your bookkeeping organized and up to date, supporting the financial clarity your business needs to make better decisions and stay on top of day-to-day financial operations.",
+      s1Best: "Best for:",
+      s1BestDesc: "Companies that need consistent bookkeeping support without building a full internal finance team.",
+      
+      s2Title: "Payroll Services",
+      s2Desc: "We support payroll processes with structure, consistency and administrative coordination, helping companies reduce time spent managing recurring payroll-related tasks.",
+      s2Best: "Best for:",
+      s2BestDesc: "Companies that need recurring payroll support and better operational control.",
+      
+      s3Title: "Contractor Payments",
+      s3Desc: "We help coordinate contractor payments so companies can pay remote workers, contractors or external professionals with more consistency, organization and compliance-minded execution.",
+      s3Best: "Best for:",
+      s3BestDesc: "Companies working with contractors, remote professionals or distributed teams.",
+      
+      s4Title: "BPO / Back-Office Support",
+      s4Desc: "We help manage the recurring operational tasks that keep the business running, from process coordination and documentation to administrative workflows and back-office execution.",
+      s4Best: "Best for:",
+      s4BestDesc: "Companies that need operational support but do not want to build or expand internal departments.",
+      
+      s5Title: "Administrative Support",
+      s5Desc: "We support administrative tasks that consume time and create bottlenecks, helping owners and teams stay focused on customers, sales and strategic priorities.",
+      s5Best: "Best for:",
+      s5BestDesc: "Companies where owners or key team members are spending too much time on admin work.",
+      
+      s6Title: "Finance Support",
+      s6Desc: "We help with finance-related operational tasks such as record organization, reporting support, payment coordination and recurring financial workflows.",
+      s6Best: "Best for:",
+      s6BestDesc: "Companies that need more structure in their finance operations without hiring a full in-house team."
+    }
   }
 };

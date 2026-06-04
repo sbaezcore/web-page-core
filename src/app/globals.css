@@ -4,12 +4,8 @@
 
 body {
   font-family: 'Inter', sans-serif;
-  background-color: #fafafa;
-  background-image: url('/images/fondoescritorio.webp');
-  background-size: 100% auto;
-  background-attachment: scroll;
-  background-position: top center;
-  background-repeat: repeat-y;
+  background: linear-gradient(to bottom, #ffffff 0%, #e8e8e8 100%);
+  min-height: 100vh;
 }
 
 .bg-network-pattern {

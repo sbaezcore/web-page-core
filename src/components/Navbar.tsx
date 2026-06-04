@@ -49,8 +49,8 @@ export default function Navbar({ dict, lang }: { dict: any, lang: string }) {
           <nav className="hidden md:flex space-x-2 text-sm font-medium items-center">
             <Link className="text-[#181789] hover:bg-[#560FF3]/80 hover:text-white px-4 py-2 rounded-lg transition-all duration-300" href={`/${lang}/buildTeams`}>{dict.buildYourTeam}</Link>
             <Link className="text-[#181789] hover:bg-[#560FF3]/80 hover:text-white px-4 py-2 rounded-lg transition-all duration-300" href={`/${lang}/runOperations`}>{dict.runOperations}</Link>
-            <Link className="text-[#181789] hover:bg-[#560FF3]/80 hover:text-white px-4 py-2 rounded-lg transition-all duration-300" href={`/${lang}/about`}>{dict.aboutCore}</Link>
             <Link className="text-[#181789] hover:bg-[#560FF3]/80 hover:text-white px-4 py-2 rounded-lg transition-all duration-300" href={`/${lang}/services`}>{dict.services}</Link>
+            <Link className="text-[#181789] hover:bg-[#560FF3]/80 hover:text-white px-4 py-2 rounded-lg transition-all duration-300" href={`/${lang}/about`}>{dict.aboutCore}</Link>
             <Link className="text-[#181789] hover:bg-[#560FF3]/80 hover:text-white px-4 py-2 rounded-lg transition-all duration-300" href={`/${lang}/faq`}>{dict.faq}</Link>
             <Link className="text-[#181789] hover:bg-[#560FF3]/80 hover:text-white px-4 py-2 rounded-lg transition-all duration-300" href={`/${lang}/contact`}>{dict.contact}</Link>
           </nav>
@@ -67,7 +67,7 @@ export default function Navbar({ dict, lang }: { dict: any, lang: string }) {
             </button>
 
             {/* Header CTA - Hidden on mobile */}
-            <Link className="hidden md:inline-block bg-gradient-to-r from-[#450CC2] to-[#2827E5] hover:from-[#560FF3] hover:to-[#560FF3] text-white px-6 py-2.5 rounded-lg text-sm font-semibold hover:opacity-90 hover:scale-105 transform transition-all duration-300 shadow-md" href="https://calendly.com/alejandro-torres-thecoreresources/30min?month=2026-05" target="_blank" rel="noopener noreferrer">
+            <Link className="hidden md:inline-block bg-gradient-to-b from-[#005A4D] to-[#00B49A] hover:from-[#005A4D]/90 hover:to-[#00B49A]/90 text-white px-6 py-2.5 rounded-lg text-sm font-semibold hover:opacity-90 hover:scale-105 transform transition-all duration-300 shadow-md" href="https://calendly.com/alejandro-torres-thecoreresources/30min?month=2026-05" target="_blank" rel="noopener noreferrer">
               {dict.bookACall}
             </Link>
 
@@ -94,9 +94,11 @@ export default function Navbar({ dict, lang }: { dict: any, lang: string }) {
 
           <nav className="flex flex-col items-center space-y-10 text-white font-raleway text-[22px] font-light">
             <Link href={`/${lang}/`} onClick={() => setIsMobileMenuOpen(false)} className="underline underline-offset-8 decoration-2 font-semibold hover:text-gray-200 transition-colors">{dict.home}</Link>
-            <Link href={`/${lang}/about`} onClick={() => setIsMobileMenuOpen(false)} className="hover:text-gray-200 transition-colors">{dict.aboutCore}</Link>
             <Link href={`/${lang}/buildTeams`} onClick={() => setIsMobileMenuOpen(false)} className="hover:text-gray-200 transition-colors">{dict.buildYourTeam}</Link>
             <Link href={`/${lang}/runOperations`} onClick={() => setIsMobileMenuOpen(false)} className="hover:text-gray-200 transition-colors">{dict.runOperations}</Link>
+            <Link href={`/${lang}/services`} onClick={() => setIsMobileMenuOpen(false)} className="hover:text-gray-200 transition-colors">{dict.services}</Link>
+            <Link href={`/${lang}/about`} onClick={() => setIsMobileMenuOpen(false)} className="hover:text-gray-200 transition-colors">{dict.aboutCore}</Link>
+            <Link href={`/${lang}/faq`} onClick={() => setIsMobileMenuOpen(false)} className="hover:text-gray-200 transition-colors">{dict.faq}</Link>
             <Link href={`/${lang}/contact`} onClick={() => setIsMobileMenuOpen(false)} className="hover:text-gray-200 transition-colors">{dict.contact}</Link>
           </nav>
 
