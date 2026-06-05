@@ -155,7 +155,7 @@ export default function ServicesContent({ dict, lang }: { dict: any, lang: strin
           {buildTeamServices.map((service, idx) => (
             <React.Fragment key={idx}>
               <FadeInSection delay={0.1}>
-                <div className="group flex flex-col p-6 sm:p-10 rounded-[2rem] transition-all duration-300 hover:bg-white hover:shadow-xl cursor-default">
+                <div id="buildTeam-service-0" className="scroll-mt-32 group flex flex-col p-6 sm:p-10 rounded-[2rem] transition-all duration-300 hover:bg-white hover:shadow-xl cursor-default">
                   <div className="flex flex-col md:flex-row items-center gap-8 mb-6">
                     <div className="w-full md:w-3/5 text-center md:text-left">
                       <h3 className="font-raleway font-bold text-2xl mb-4 text-black group-hover:text-[#560FF3] transition-colors duration-300">
@@ -205,7 +205,7 @@ export default function ServicesContent({ dict, lang }: { dict: any, lang: strin
           {runOpsServices.map((service, idx) => (
             <React.Fragment key={idx}>
               <FadeInSection delay={0.1}>
-                <div className="group flex flex-col p-6 sm:p-10 rounded-[2rem] transition-all duration-300 hover:bg-white hover:shadow-xl cursor-default">
+                <div id="runOps-service-0" className="scroll-mt-32 group flex flex-col p-6 sm:p-10 rounded-[2rem] transition-all duration-300 hover:bg-white hover:shadow-xl cursor-default">
                   <div className="flex flex-col md:flex-row items-center gap-8 mb-6">
                     <div className="w-full md:w-3/5 text-center md:text-left">
                       <h3 className="font-raleway font-bold text-2xl mb-4 text-black group-hover:text-[#00897B] transition-colors duration-300">

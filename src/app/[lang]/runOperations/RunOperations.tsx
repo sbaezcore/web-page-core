@@ -5,6 +5,7 @@ import FadeInSection from '../../../components/FadeInSection';
 
 export default function RunOperationsContent({ dict }: { dict: any }) {
   const t = dict;
+  const lang = dict.nav?.home === "Inicio" ? "es" : "en";
   return (
     <main className="w-full mx-auto overflow-hidden">
       {/* Hero Section */}
@@ -142,9 +143,9 @@ export default function RunOperationsContent({ dict }: { dict: any }) {
                       <li className="flex items-center text-gray-800 group-hover:text-white transition-colors duration-300"><span className="w-1.5 h-1.5 bg-black group-hover:bg-white rounded-full mr-3 shrink-0 transition-colors duration-300"></span>{t.uc1S5}</li>
                     </ul>
                     <div className="mt-8 text-right opacity-0 group-hover:opacity-100 transition-opacity duration-300">
-                      <span className="inline-block border border-white text-white rounded-lg px-4 py-2 font-medium text-sm">
+                      <Link href={`/${lang}/services#runOps-service-0`} className="inline-block border border-white text-white rounded-lg px-4 py-2 font-medium text-sm hover:bg-white hover:text-[#560FF3] transition-colors duration-300">
                         {dict.nav?.home === "Inicio" ? "Ver Servicios Relacionados" : "See Related Services"}
-                      </span>
+                      </Link>
                     </div>
                   </div>
                 </div>
@@ -170,9 +171,9 @@ export default function RunOperationsContent({ dict }: { dict: any }) {
                       <li className="flex items-center text-gray-800 group-hover:text-white transition-colors duration-300"><span className="w-1.5 h-1.5 bg-black group-hover:bg-white rounded-full mr-3 shrink-0 transition-colors duration-300"></span>{t.uc2S5}</li>
                     </ul>
                     <div className="mt-8 text-right opacity-0 group-hover:opacity-100 transition-opacity duration-300">
-                      <span className="inline-block border border-white text-white rounded-lg px-4 py-2 font-medium text-sm">
+                      <Link href={`/${lang}/services#runOps-service-1`} className="inline-block border border-white text-white rounded-lg px-4 py-2 font-medium text-sm hover:bg-white hover:text-[#560FF3] transition-colors duration-300">
                         {dict.nav?.home === "Inicio" ? "Ver Servicios Relacionados" : "See Related Services"}
-                      </span>
+                      </Link>
                     </div>
                   </div>
                 </div>
@@ -198,9 +199,9 @@ export default function RunOperationsContent({ dict }: { dict: any }) {
                       <li className="flex items-center text-gray-800 group-hover:text-white transition-colors duration-300"><span className="w-1.5 h-1.5 bg-black group-hover:bg-white rounded-full mr-3 shrink-0 transition-colors duration-300"></span>{t.uc3S5}</li>
                     </ul>
                     <div className="mt-8 text-right opacity-0 group-hover:opacity-100 transition-opacity duration-300">
-                      <span className="inline-block border border-white text-white rounded-lg px-4 py-2 font-medium text-sm">
+                      <Link href={`/${lang}/services#runOps-service-2`} className="inline-block border border-white text-white rounded-lg px-4 py-2 font-medium text-sm hover:bg-white hover:text-[#560FF3] transition-colors duration-300">
                         {dict.nav?.home === "Inicio" ? "Ver Servicios Relacionados" : "See Related Services"}
-                      </span>
+                      </Link>
                     </div>
                   </div>
                 </div>
@@ -226,9 +227,9 @@ export default function RunOperationsContent({ dict }: { dict: any }) {
                       <li className="flex items-center text-gray-800 group-hover:text-white transition-colors duration-300"><span className="w-1.5 h-1.5 bg-black group-hover:bg-white rounded-full mr-3 shrink-0 transition-colors duration-300"></span>{t.uc4S5}</li>
                     </ul>
                     <div className="mt-8 text-right opacity-0 group-hover:opacity-100 transition-opacity duration-300">
-                      <span className="inline-block border border-white text-white rounded-lg px-4 py-2 font-medium text-sm">
+                      <Link href={`/${lang}/services#runOps-service-3`} className="inline-block border border-white text-white rounded-lg px-4 py-2 font-medium text-sm hover:bg-white hover:text-[#560FF3] transition-colors duration-300">
                         {dict.nav?.home === "Inicio" ? "Ver Servicios Relacionados" : "See Related Services"}
-                      </span>
+                      </Link>
                     </div>
                   </div>
                 </div>
@@ -255,9 +256,9 @@ export default function RunOperationsContent({ dict }: { dict: any }) {
                       <li className="flex items-center text-gray-800 group-hover:text-white transition-colors duration-300"><span className="w-1.5 h-1.5 bg-black group-hover:bg-white rounded-full mr-3 shrink-0 transition-colors duration-300"></span>{t.uc5S6}</li>
                     </ul>
                     <div className="mt-8 text-right opacity-0 group-hover:opacity-100 transition-opacity duration-300">
-                      <span className="inline-block border border-white text-white rounded-lg px-4 py-2 font-medium text-sm">
+                      <Link href={`/${lang}/services#runOps-service-4`} className="inline-block border border-white text-white rounded-lg px-4 py-2 font-medium text-sm hover:bg-white hover:text-[#560FF3] transition-colors duration-300">
                         {dict.nav?.home === "Inicio" ? "Ver Servicios Relacionados" : "See Related Services"}
-                      </span>
+                      </Link>
                     </div>
                   </div>
                 </div>

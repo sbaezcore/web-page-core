@@ -226,68 +226,68 @@ export const es = {
     heroDesc3: "\" se adapta a tus necesidades específicas de contratación, mientras que \"",
     heroDesc4: "Opera tu Negocio",
     heroDesc5: "\" se encarga de tus procesos de soporte y financieros, asegurando que tu negocio se mantenga organizado, ágil y en constante avance.",
-    buildTeamTitle: "Build Your Team",
+    buildTeamTitle: "Arma tu Equipo",
     buildTeam: {
       s1Title: "Reclutamiento y Selección",
       s1Desc: "Te ayudamos a encontrar y evaluar candidatos calificados para roles estratégicos o a largo plazo, enfocándonos en talento que se alinee con tus requisitos técnicos, cultura, necesidades de comunicación y objetivos de negocio.",
-      s1Best: "Best for:",
+      s1Best: "Ideal para:",
       s1BestDesc: "Empresas que necesitan contratar talento permanente o a largo plazo fuera del mercado de EE. UU.",
 
       s2Title: "Staffing",
       s2Desc: "Te ayudamos a cubrir roles temporales, por proyecto o flexibles con profesionales calificados, dándole a tu empresa la capacidad que necesita sin compromisos innecesarios a largo plazo.",
-      s2Best: "Best for:",
+      s2Best: "Ideal para:",
       s2BestDesc: "Empresas que necesitan apoyo rápido para un rol, carga de trabajo o proyecto específico.",
 
       s3Title: "Employer of Record",
       s3Desc: "Contrata talento en el extranjero legalmente sin abrir una entidad local.\n\nCuando necesitas emplear talento en otro país pero no tienes una entidad local, Core puede apoyar la estructura de contratación a través de una solución de Employer of Record, ayudando a reducir la complejidad legal y administrativa.",
-      s3Best: "Best for:",
+      s3Best: "Ideal para:",
       s3BestDesc: "Empresas que quieren contratar talento internacional sin establecer una empresa local.",
 
       s4Title: "Staff Augmentation",
       s4Desc: "Te ayudamos a fortalecer tu equipo existente con profesionales externos que aportan capacidad adicional, habilidades especializadas o apoyo a proyectos mientras trabajan junto a tu equipo interno.",
-      s4Best: "Best for:",
+      s4Best: "Ideal para:",
       s4BestDesc: "Empresas que ya tienen un equipo pero necesitan más capacidad o experiencia específica.",
 
       s5Title: "Servicios de Visa de Empleo",
       s5Desc: "Apoyamos a las empresas con procesos de visa relacionados con el empleo en México, ayudando a coordinar la documentación, los pasos administrativos y la orientación del proceso al reubicar o contratar talento extranjero.",
-      s5Best: "Best for:",
+      s5Best: "Ideal para:",
       s5BestDesc: "Empresas que necesitan gestionar requisitos de visa de empleo conectados con México.",
 
       s6Title: "Contratación, onboarding y gestión continua",
       s6Desc: "Core apoya el proceso más allá de la búsqueda de candidatos. Ayudamos con la configuración de la contratación, la coordinación del onboarding y el apoyo continuo para que la solución de talento funcione consistentemente a lo largo del tiempo.",
-      s6Best: "Best for:",
+      s6Best: "Ideal para:",
       s6BestDesc: "Empresas que quieren un socio, no solo una lista de candidatos."
     },
-    runOpsTitle: "Run Your Operations",
+    runOpsTitle: "Opera tu Negocio",
     runOps: {
       s1Title: "Contabilidad (Bookkeeping)",
       s1Desc: "Ayudamos a mantener tu contabilidad organizada y actualizada, apoyando la claridad financiera que tu negocio necesita para tomar mejores decisiones y estar al tanto de las operaciones financieras diarias.",
-      s1Best: "Best for:",
+      s1Best: "Ideal para:",
       s1BestDesc: "Empresas que necesitan apoyo contable consistente sin construir un equipo financiero interno completo.",
 
       s2Title: "Servicios de Nómina",
       s2Desc: "Apoyamos los procesos de nómina con estructura, consistencia y coordinación administrativa, ayudando a las empresas a reducir el tiempo invertido en la gestión de tareas recurrentes relacionadas con la nómina.",
-      s2Best: "Best for:",
+      s2Best: "Ideal para:",
       s2BestDesc: "Empresas que necesitan apoyo recurrente de nómina y mejor control operativo.",
 
       s3Title: "Pagos a Contratistas",
       s3Desc: "Ayudamos a coordinar los pagos a contratistas para que las empresas puedan pagar a trabajadores remotos, contratistas o profesionales externos con más consistencia, organización y ejecución enfocada en el cumplimiento.",
-      s3Best: "Best for:",
+      s3Best: "Ideal para:",
       s3BestDesc: "Empresas que trabajan con contratistas, profesionales remotos o equipos distribuidos.",
 
       s4Title: "BPO / Soporte de Back-Office",
       s4Desc: "Ayudamos a gestionar las tareas operativas recurrentes que mantienen el negocio funcionando, desde la coordinación de procesos y documentación hasta flujos de trabajo administrativos y ejecución de back-office.",
-      s4Best: "Best for:",
+      s4Best: "Ideal para:",
       s4BestDesc: "Empresas que necesitan apoyo operativo pero no quieren construir o expandir departamentos internos.",
 
       s5Title: "Soporte Administrativo",
       s5Desc: "Apoyamos tareas administrativas que consumen tiempo y crean cuellos de botella, ayudando a dueños y equipos a mantenerse enfocados en clientes, ventas y prioridades estratégicas.",
-      s5Best: "Best for:",
+      s5Best: "Ideal para:",
       s5BestDesc: "Empresas donde los dueños o miembros clave del equipo están dedicando demasiado tiempo al trabajo administrativo.",
 
       s6Title: "Soporte Financiero",
       s6Desc: "Ayudamos con tareas operativas relacionadas con las finanzas, como la organización de registros, el apoyo en informes, la coordinación de pagos y los flujos de trabajo financieros recurrentes.",
-      s6Best: "Best for:",
+      s6Best: "Ideal para:",
       s6BestDesc: "Empresas que necesitan más estructura en sus operaciones financieras sin contratar un equipo interno completo."
     }
   }
