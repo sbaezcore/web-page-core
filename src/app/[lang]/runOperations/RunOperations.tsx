@@ -8,14 +8,19 @@ export default function RunOperationsContent({ dict }: { dict: any }) {
   return (
     <main className="w-full mx-auto overflow-hidden">
       {/* Hero Section */}
-      <section className="relative pt-16 pb-16 md:pt-4 md:pb-20 px-6 xl:px-8 max-w-7xl mx-auto group">
-        {/* Background Image with animation */}
-        <div className="absolute top-0 right-0 w-full h-[50%] lg:h-[90%] lg:w-[55%] transition-all duration-500 [mask-image:linear-gradient(to_bottom,black_40%,transparent_100%)] lg:[mask-image:linear-gradient(to_right,transparent_0%,black_100%)] -z-10">
-          <Image alt="Dashboard Laptop Mockup" src="/images/dashboard.webp" fill className="object-cover object-left" sizes="(max-width: 1024px) 100vw, 50vw" priority />
+      <section className="relative pt-8 lg:pt-16 pb-16 lg:pb-20 px-6 xl:px-8 max-w-[1600px] mx-auto group">
+        {/* Mobile Image */}
+        <div className="block lg:hidden relative w-full h-[300px] mb-8 [mask-image:linear-gradient(to_bottom,black_70%,transparent_100%)] -z-10">
+          <Image alt="Dashboard Laptop Mockup" src="/images/dashboard.webp" fill className="object-cover rounded-3xl" sizes="100vw" priority />
+        </div>
+
+        {/* Desktop Image */}
+        <div className="hidden lg:block absolute top-0 right-0 h-[90%] w-[55%] transition-all duration-500 [mask-image:linear-gradient(to_right,transparent_0%,black_100%)] -z-10">
+          <Image alt="Dashboard Laptop Mockup" src="/images/dashboard.webp" fill className="object-cover object-left" sizes="50vw" priority />
         </div>
 
         <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 items-center">
-          <div className="flex flex-col gap-6 relative z-10 pt-48 lg:pt-0">
+          <div className="flex flex-col gap-6 relative z-10 pt-0">
             <FadeInSection>
               <h1 className="font-bold text-[32px] md:text-[32px] leading-[1.1] text-[#560FF3] tracking-tight">
                 {t.heroTitle}
@@ -106,7 +111,7 @@ export default function RunOperationsContent({ dict }: { dict: any }) {
 
       {/* Use Cases Section */}
       <section className="py-24 px-6 xl:px-8 relative group/section">
-        <div className="max-w-6xl mx-auto">
+        <div className="max-w-[1440px] mx-auto">
           <FadeInSection>
             <div className="text-center mb-16 cursor-default">
               <div className="w-[100vw] relative left-1/2 -translate-x-1/2 bg-[#333333] group-hover/section:bg-[#560FF3] transition-colors duration-500 py-8">
@@ -127,7 +132,7 @@ export default function RunOperationsContent({ dict }: { dict: any }) {
                     <p className="text-gray-700 mb-4">{t.uc1P1}</p>
                     <p className="text-gray-700">{t.uc1P2}</p>
                   </div>
-                  <div className="bg-white group-hover:bg-[#560FF3] transition-colors duration-300 rounded-[2rem] p-8 shadow-sm flex flex-col h-full border border-transparent">
+                  <div className="bg-white group-hover:bg-[#7C4EF6] transition-colors duration-300 rounded-[2rem] p-8 shadow-sm flex flex-col h-full border border-transparent">
                     <h4 className="font-bold text-black group-hover:text-white transition-colors duration-300 text-right mb-6">{t.servicesMayInclude}</h4>
                     <ul className="space-y-3 font-medium flex-grow">
                       <li className="flex items-center text-gray-800 group-hover:text-white transition-colors duration-300"><span className="w-1.5 h-1.5 bg-black group-hover:bg-white rounded-full mr-3 shrink-0 transition-colors duration-300"></span>{t.uc1S1}</li>
@@ -155,7 +160,7 @@ export default function RunOperationsContent({ dict }: { dict: any }) {
                     <p className="text-gray-700 mb-4">{t.uc2P1}</p>
                     <p className="text-gray-700">{t.uc2P2}</p>
                   </div>
-                  <div className="bg-white group-hover:bg-[#560FF3] transition-colors duration-300 rounded-[2rem] p-8 shadow-sm flex flex-col h-full border border-transparent">
+                  <div className="bg-white group-hover:bg-[#7C4EF6] transition-colors duration-300 rounded-[2rem] p-8 shadow-sm flex flex-col h-full border border-transparent">
                     <h4 className="font-bold text-black group-hover:text-white transition-colors duration-300 text-right mb-6">{t.servicesMayInclude}</h4>
                     <ul className="space-y-3 font-medium flex-grow">
                       <li className="flex items-center text-gray-800 group-hover:text-white transition-colors duration-300"><span className="w-1.5 h-1.5 bg-black group-hover:bg-white rounded-full mr-3 shrink-0 transition-colors duration-300"></span>{t.uc2S1}</li>
@@ -183,7 +188,7 @@ export default function RunOperationsContent({ dict }: { dict: any }) {
                     <p className="text-gray-700 mb-4">{t.uc3P1}</p>
                     <p className="text-gray-700">{t.uc3P2}</p>
                   </div>
-                  <div className="bg-white group-hover:bg-[#560FF3] transition-colors duration-300 rounded-[2rem] p-8 shadow-sm flex flex-col h-full border border-transparent">
+                  <div className="bg-white group-hover:bg-[#7C4EF6] transition-colors duration-300 rounded-[2rem] p-8 shadow-sm flex flex-col h-full border border-transparent">
                     <h4 className="font-bold text-black group-hover:text-white transition-colors duration-300 text-right mb-6">{t.servicesMayInclude}</h4>
                     <ul className="space-y-3 font-medium flex-grow">
                       <li className="flex items-center text-gray-800 group-hover:text-white transition-colors duration-300"><span className="w-1.5 h-1.5 bg-black group-hover:bg-white rounded-full mr-3 shrink-0 transition-colors duration-300"></span>{t.uc3S1}</li>
@@ -211,7 +216,7 @@ export default function RunOperationsContent({ dict }: { dict: any }) {
                     <p className="text-gray-700 mb-4">{t.uc4P1}</p>
                     <p className="text-gray-700">{t.uc4P2}</p>
                   </div>
-                  <div className="bg-white group-hover:bg-[#560FF3] transition-colors duration-300 rounded-[2rem] p-8 shadow-sm flex flex-col h-full border border-transparent">
+                  <div className="bg-white group-hover:bg-[#7C4EF6] transition-colors duration-300 rounded-[2rem] p-8 shadow-sm flex flex-col h-full border border-transparent">
                     <h4 className="font-bold text-black group-hover:text-white transition-colors duration-300 text-right mb-6">{t.servicesMayInclude}</h4>
                     <ul className="space-y-3 font-medium flex-grow">
                       <li className="flex items-center text-gray-800 group-hover:text-white transition-colors duration-300"><span className="w-1.5 h-1.5 bg-black group-hover:bg-white rounded-full mr-3 shrink-0 transition-colors duration-300"></span>{t.uc4S1}</li>
@@ -239,7 +244,7 @@ export default function RunOperationsContent({ dict }: { dict: any }) {
                     <p className="text-gray-700 mb-4">{t.uc5P1}</p>
                     <p className="text-gray-700">{t.uc5P2}</p>
                   </div>
-                  <div className="bg-white group-hover:bg-[#560FF3] transition-colors duration-300 rounded-[2rem] p-8 shadow-sm flex flex-col h-full border border-transparent">
+                  <div className="bg-white group-hover:bg-[#7C4EF6] transition-colors duration-300 rounded-[2rem] p-8 shadow-sm flex flex-col h-full border border-transparent">
                     <h4 className="font-bold text-black group-hover:text-white transition-colors duration-300 text-right mb-6">{t.servicesMayInclude}</h4>
                     <ul className="space-y-3 font-medium flex-grow">
                       <li className="flex items-center text-gray-800 group-hover:text-white transition-colors duration-300"><span className="w-1.5 h-1.5 bg-black group-hover:bg-white rounded-full mr-3 shrink-0 transition-colors duration-300"></span>{t.uc5S1}</li>
@@ -271,7 +276,7 @@ export default function RunOperationsContent({ dict }: { dict: any }) {
           </h2>
         </div>
 
-        <div className="max-w-7xl mx-auto px-6 xl:px-8">
+        <div className="max-w-[1600px] mx-auto px-6 xl:px-8">
           <div className="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-6 gap-6">
             <FadeInSection delay={0.1} className="h-full">
               {/* Card 1 */}

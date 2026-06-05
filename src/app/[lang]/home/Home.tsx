@@ -18,7 +18,7 @@ export default function HomeContent({ dict, lang }: { dict: any, lang: string })
   return (
     <main>
       {/* SECTION 1: Hero */}
-      <section className="text-center pt-20 pb-16 px-4 relative z-10 max-w-6xl mx-auto">
+      <section className="text-center pt-20 pb-16 px-4 relative z-10 max-w-[1440px] mx-auto">
         {/* Large Logo */}
         <FadeInSection>
           <div className="flex justify-center mb-10">
@@ -72,7 +72,7 @@ export default function HomeContent({ dict, lang }: { dict: any, lang: string })
       </section>
 
       {/* SECTION 3: Main solution cards */}
-      <section className="max-w-7xl mx-auto px-8 py-8 relative z-10 text-center mb-16">
+      <section className="max-w-[1600px] mx-auto px-8 py-8 relative z-10 text-center mb-16">
         <div className="grid md:grid-cols-2 gap-12 text-left">
 
           {/* Service Card 1: Build Your Team */}
@@ -189,7 +189,7 @@ export default function HomeContent({ dict, lang }: { dict: any, lang: string })
 
       {/* SECTION 4: Core differentiator (Globe + 4 blocks) */}
       <section className="bg-gray-50/30 border-t border-b border-gray-100 py-16">
-        <div className="max-w-7xl mx-auto px-8 relative z-10">
+        <div className="max-w-[1600px] mx-auto px-8 relative z-10">
 
           <FadeInSection>
             <div className="flex flex-col md:flex-row items-center justify-between gap-16 mb-16 group">
@@ -284,7 +284,7 @@ export default function HomeContent({ dict, lang }: { dict: any, lang: string })
       </section>
 
       {/* SECTION 5: Pain-based section */}
-      <section className="max-w-7xl mx-auto px-8 py-20 relative z-10 flex flex-col md:flex-row items-center gap-16 group cursor-default">
+      <section className="max-w-[1600px] mx-auto px-8 py-20 relative z-10 flex flex-col md:flex-row items-center gap-16 group cursor-default">
         <FadeInSection className="w-full md:w-1/2">
           <h2 className="font-raleway font-bold text-[36px] md:text-[43px] leading-none text-black group-hover:text-[#560FF3] transition-colors duration-500 mb-6">{dict.painTitle}</h2>
           <p className="text-black text-lg leading-relaxed mb-6">

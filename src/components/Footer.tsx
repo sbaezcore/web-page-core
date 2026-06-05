@@ -4,7 +4,7 @@ import { FiInstagram, FiFacebook } from 'react-icons/fi';
 export default function Footer({ dict, lang }: { dict: any, lang: string }) {
   return (
     <footer className="mt-20 px-4 pb-4">
-      <div className="max-w-7xl mx-auto bg-black text-white rounded-3xl overflow-hidden font-raleway font-medium text-[20px]">
+      <div className="max-w-[1600px] mx-auto bg-black text-white rounded-3xl overflow-hidden font-raleway font-medium text-[20px]">
         {/* Footer Top CTA */}
         <div className="text-center py-16 px-8 border-b border-white">
           <h2 className="text-4xl font-bold mb-4">{dict.readyToScale}</h2>

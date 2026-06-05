@@ -111,7 +111,7 @@ export default function ServicesContent({ dict, lang }: { dict: any, lang: strin
   return (
     <main className="w-full mx-auto overflow-hidden">
       {/* SECTION 1: Hero */}
-      <section className="relative pt-24 pb-16 px-4 sm:px-8 xl:px-8 max-w-6xl mx-auto flex flex-col md:flex-row items-center overflow-hidden">
+      <section className="relative pt-24 pb-16 px-4 sm:px-8 xl:px-8 max-w-[1440px] mx-auto flex flex-col md:flex-row items-center overflow-hidden">
         <div className="w-full md:w-3/5 z-10 pr-0 md:pr-6 text-center md:text-left">
           <FadeInSection>
             <h1 className="font-raleway font-bold text-[40px] md:text-[50px] text-[#560FF3] mb-6">
@@ -140,7 +140,7 @@ export default function ServicesContent({ dict, lang }: { dict: any, lang: strin
       </section>
 
       {/* SECTION 2: Build Your Team */}
-      <section className="py-16 px-4 sm:px-8 xl:px-8 max-w-6xl mx-auto bg-[#F5F3FF] rounded-3xl mb-16">
+      <section className="py-16 px-4 sm:px-8 xl:px-8 max-w-[1440px] mx-auto bg-[#F5F3FF] rounded-3xl mb-16">
         <FadeInSection>
           <div className="flex items-center justify-center mb-16">
             <div className="flex-1 h-[2px] bg-gradient-to-r from-transparent to-[#560FF3]"></div>
@@ -190,7 +190,7 @@ export default function ServicesContent({ dict, lang }: { dict: any, lang: strin
       </section>
 
       {/* SECTION 3: Run Your Operations */}
-      <section className="py-16 px-4 sm:px-8 xl:px-8 max-w-6xl mx-auto bg-[#E6F7F5] rounded-3xl mb-16">
+      <section className="py-16 px-4 sm:px-8 xl:px-8 max-w-[1440px] mx-auto bg-[#E6F7F5] rounded-3xl mb-16">
         <FadeInSection>
           <div className="flex items-center justify-center mb-16">
             <div className="flex-1 h-[2px] bg-gradient-to-r from-transparent to-[#00897B]"></div>

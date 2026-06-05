@@ -39,7 +39,7 @@ export default function Navbar({ dict, lang }: { dict: any, lang: string }) {
   return (
     <>
       <div className="sticky top-4 z-50 w-full transition-all duration-300">
-        <header className={`max-w-7xl mx-4 xl:mx-auto flex justify-between items-center transition-all duration-300 ${isScrolled ? 'bg-white/70 backdrop-blur-md shadow-sm rounded-lg py-3 px-6 xl:px-8' : 'bg-transparent py-6 px-4 xl:px-8'}`}>
+        <header className={`max-w-[1600px] mx-4 xl:mx-auto flex justify-between items-center transition-all duration-300 ${isScrolled ? 'bg-white/70 backdrop-blur-md shadow-sm rounded-lg py-3 px-6 xl:px-8' : 'bg-transparent py-6 px-4 xl:px-8'}`}>
           {/* Logo */}
           <Link href={`/${lang}`} className="flex items-center">
             <Image src="/images/logo2026.svg" alt="Core Resources Logo" width={200} height={40} className="h-10 w-auto object-contain" priority />
