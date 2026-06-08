@@ -46,13 +46,20 @@ export default function Navbar({ dict, lang }: { dict: any, lang: string }) {
           </Link>
 
           {/* Navigation */}
-          <nav className="hidden md:flex space-x-2 text-sm font-medium items-center">
+          {/* <nav className="hidden md:flex space-x-2 text-sm font-medium items-center">
             <Link className="text-[#181789] hover:bg-[#560FF3]/80 hover:text-white px-4 py-2 rounded-lg transition-all duration-300" href={`/${lang}/buildTeams`}>{dict.buildYourTeam}</Link>
             <Link className="text-[#181789] hover:bg-[#560FF3]/80 hover:text-white px-4 py-2 rounded-lg transition-all duration-300" href={`/${lang}/runOperations`}>{dict.runOperations}</Link>
             <Link className="text-[#181789] hover:bg-[#560FF3]/80 hover:text-white px-4 py-2 rounded-lg transition-all duration-300" href={`/${lang}/services`}>{dict.services}</Link>
             <Link className="text-[#181789] hover:bg-[#560FF3]/80 hover:text-white px-4 py-2 rounded-lg transition-all duration-300" href={`/${lang}/about`}>{dict.aboutCore}</Link>
             <Link className="text-[#181789] hover:bg-[#560FF3]/80 hover:text-white px-4 py-2 rounded-lg transition-all duration-300" href={`/${lang}/faq`}>{dict.faq}</Link>
             <Link className="text-[#181789] hover:bg-[#560FF3]/80 hover:text-white px-4 py-2 rounded-lg transition-all duration-300" href={`/${lang}/contact`}>{dict.contact}</Link>
+          </nav> */}
+
+          <nav className="hidden md:flex space-x-2 text-sm font-medium items-center">
+            <Link className="text-[#181789] hover:bg-[#560FF3]/80 hover:text-white px-4 py-2 rounded-lg transition-all duration-300" href={`/${lang}/buildTeams`}>{dict.buildYourTeam}</Link>
+            <Link className="text-[#181789] hover:bg-[#560FF3]/80 hover:text-white px-4 py-2 rounded-lg transition-all duration-300" href={`/${lang}/runOperations`}>{dict.runOperations}</Link>
+            <Link className="text-[#181789] hover:bg-[#560FF3]/80 hover:text-white px-4 py-2 rounded-lg transition-all duration-300" href={`/${lang}/services`}>{dict.services}</Link>
+            <Link className="text-[#181789] hover:bg-[#560FF3]/80 hover:text-white px-4 py-2 rounded-lg transition-all duration-300" href={`/${lang}/about`}>{dict.aboutCore}</Link>
           </nav>
 
           {/* Header Actions */}
@@ -72,8 +79,8 @@ export default function Navbar({ dict, lang }: { dict: any, lang: string }) {
             </Link>
 
             {/* Hamburger Button - Visible only on mobile */}
-            <button 
-              className="md:hidden text-[#181789] focus:outline-none flex items-center justify-center" 
+            <button
+              className="md:hidden text-[#181789] focus:outline-none flex items-center justify-center"
               onClick={() => setIsMobileMenuOpen(true)}
             >
               <Menu size={32} />
@@ -85,7 +92,7 @@ export default function Navbar({ dict, lang }: { dict: any, lang: string }) {
       {/* Mobile Menu Overlay */}
       {isMobileMenuOpen && (
         <div className="fixed inset-0 z-[100] bg-[#474747] bg-opacity-[0.97] flex flex-col items-center justify-center transition-opacity duration-300">
-          <button 
+          <button
             className="absolute top-8 right-8 text-white p-2 hover:scale-110 transition-transform flex items-center justify-center"
             onClick={() => setIsMobileMenuOpen(false)}
           >
@@ -103,9 +110,9 @@ export default function Navbar({ dict, lang }: { dict: any, lang: string }) {
           </nav>
 
           <div className="absolute bottom-16">
-            <Link 
-              href="https://calendly.com/alejandro-torres-thecoreresources/30min?month=2026-05" 
-              target="_blank" 
+            <Link
+              href="https://calendly.com/alejandro-torres-thecoreresources/30min?month=2026-05"
+              target="_blank"
               rel="noopener noreferrer"
               className="inline-block bg-white text-black px-8 py-3 rounded-xl font-bold uppercase tracking-wider text-sm shadow-xl hover:scale-105 transition-transform"
               onClick={() => setIsMobileMenuOpen(false)}

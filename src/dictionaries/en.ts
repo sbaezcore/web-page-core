@@ -291,4 +291,21 @@ export const en = {
       s6BestDesc: "Companies that need more structure in their finance operations without hiring a full in-house team."
     }
   }
+,
+  about: {
+    aboutCoreResources: "About Core Resources",
+    heroTitle1: "Core Resources was founded with a clear mission:",
+    heroTitle2: "to simplify how growing U.S. companies scale their talent and operations.",
+    profileP1: "Founded and led by Francisco Hernández, we are a firm specialized in global talent solutions and structured BPO and administrative support services.",
+    profileP2: "Our solid reputation and integration into the binational business ecosystem are backed by our membership in AMCHAM, guaranteeing secure, efficient operations aligned with current regulatory frameworks.",
+    howWeHelp: "How We Help You Grow",
+    growthIntro: "Growth often brings operational clutter and rising overhead. At Core, we help business owners and corporate teams delegate complexity through two smart paths:",
+    buildTeamTitle: "Building the Team You Need",
+    buildTeamSub: "Build Your Team",
+    buildTeamDesc: "We eliminate the friction of traditional hiring and substantially reduce costs by recruiting qualified professionals across Latin American markets. Whether for long-term positions, temporary projects, or support through EOR and work visas, we structure the ideal legal model for your business.",
+    runOpsTitle: "Making Your Operations Run Better",
+    runOpsSub: "Run Your Operations",
+    runOpsDesc: "We free your leaders from the administrative burden of the back office. With CoreBooks and our advanced financial support, we centralize bookkeeping workflows, payroll processing, and international contractor payment management into a single, seamless structure.",
+    footerBanner: "With headquarters in Mexico, we become the single comprehensive partner unifying people, processes, and continuous execution. We take ownership of the day-to-day operational structure so you can focus 100% on sales, clients, and expanding your business."
+  }
 };

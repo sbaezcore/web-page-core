@@ -291,4 +291,21 @@ export const es = {
       s6BestDesc: "Empresas que necesitan más estructura en sus operaciones financieras sin contratar un equipo interno completo."
     }
   }
+,
+  about: {
+    aboutCoreResources: "Sobre Core Resources",
+    heroTitle1: "Core Resources se fundó con una misión clara:",
+    heroTitle2: "simplificar cómo las empresas en crecimiento de EE. UU. escalan su talento y operaciones.",
+    profileP1: "Fundada y dirigida por Francisco Hernández, somos una firma especializada en soluciones de talento global y servicios estructurados de BPO y soporte administrativo.",
+    profileP2: "Nuestra sólida reputación e integración en el ecosistema empresarial binacional están respaldadas por nuestra membresía en AMCHAM, garantizando operaciones seguras y eficientes alineadas con los marcos regulatorios vigentes.",
+    howWeHelp: "Cómo Te Ayudamos a Crecer",
+    growthIntro: "El crecimiento a menudo trae desorden operativo y aumento de gastos generales. En Core, ayudamos a los dueños de negocios y equipos corporativos a delegar la complejidad a través de dos caminos inteligentes:",
+    buildTeamTitle: "Construyendo el Equipo que Necesitas",
+    buildTeamSub: "Arma tu Equipo",
+    buildTeamDesc: "Eliminamos la fricción de la contratación tradicional y reducimos los costos sustancialmente reclutando profesionales calificados en los mercados latinoamericanos. Ya sea para puestos a largo plazo, proyectos temporales o soporte a través de EOR y visas de trabajo, estructuramos el modelo legal ideal para tu negocio.",
+    runOpsTitle: "Haciendo que tus Operaciones Funcionen Mejor",
+    runOpsSub: "Opera tu Negocio",
+    runOpsDesc: "Liberamos a tus líderes de la carga administrativa del back office. Con CoreBooks y nuestro soporte financiero avanzado, centralizamos los flujos de trabajo de contabilidad, el procesamiento de nómina y la gestión de pagos a contratistas internacionales en una estructura única y perfecta.",
+    footerBanner: "Con sede en México, nos convertimos en el único socio integral que unifica personas, procesos y ejecución continua. Asumimos la propiedad de la estructura operativa diaria para que puedas enfocarte al 100% en las ventas, los clientes y en expandir tu negocio."
+  }
 };
