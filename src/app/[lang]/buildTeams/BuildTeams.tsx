@@ -70,8 +70,8 @@ export default function BuildTeamsContent({ dict }: { dict: any }) {
               {t.transitionTitle}
             </h2>
             <div className="space-y-6 text-gray-700 text-lg group cursor-default">
-              <p>{t.transitionP1}</p>
-              <p>{t.transitionP2}</p>
+              <p dangerouslySetInnerHTML={{ __html: t.transitionP1 }} />
+              <p dangerouslySetInnerHTML={{ __html: t.transitionP2 }} />
               <div className="pt-2">
                 <p className="font-bold text-black px-6 py-4 rounded-xl transition-colors duration-500 group-hover:bg-[#560FF3] group-hover:text-white inline-block w-full">
                   {t.transitionP3}
@@ -106,7 +106,7 @@ export default function BuildTeamsContent({ dict }: { dict: any }) {
                     <p className="text-gray-700">{t.uc1P2}</p>
                   </div>
                   <div className="bg-white group-hover:bg-[#7C4EF6] transition-colors duration-300 rounded-[2rem] p-8 shadow-sm flex flex-col h-full">
-                    <h4 className="font-bold text-black group-hover:text-white transition-colors duration-300 text-right mb-6">{t.servicesMayInclude}</h4>
+                    <h4 className="font-bold text-black group-hover:text-white transition-colors duration-300 text-left mb-6">{t.servicesMayInclude}</h4>
                     <ul className="space-y-3 font-medium flex-grow">
                       <li className="flex items-center text-gray-800 group-hover:text-white transition-colors duration-300"><span className="w-1.5 h-1.5 bg-black group-hover:bg-white rounded-full mr-3 shrink-0 transition-colors duration-300"></span>{t.uc1S1}</li>
                       <li className="flex items-center text-gray-800 group-hover:text-white transition-colors duration-300"><span className="w-1.5 h-1.5 bg-black group-hover:bg-white rounded-full mr-3 shrink-0 transition-colors duration-300"></span>{t.uc1S2}</li>
@@ -133,7 +133,7 @@ export default function BuildTeamsContent({ dict }: { dict: any }) {
                     <p className="text-gray-700">{t.uc2P1}</p>
                   </div>
                   <div className="bg-white group-hover:bg-[#7C4EF6] transition-colors duration-300 rounded-[2rem] p-8 shadow-sm flex flex-col h-full">
-                    <h4 className="font-bold text-black group-hover:text-white transition-colors duration-300 text-right mb-6">{t.servicesMayInclude}</h4>
+                    <h4 className="font-bold text-black group-hover:text-white transition-colors duration-300 text-left mb-6">{t.servicesMayInclude}</h4>
                     <ul className="space-y-3 font-medium flex-grow">
                       <li className="flex items-center text-gray-800 group-hover:text-white transition-colors duration-300"><span className="w-1.5 h-1.5 bg-black group-hover:bg-white rounded-full mr-3 shrink-0 transition-colors duration-300"></span>{t.uc2S1}</li>
                       <li className="flex items-center text-gray-800 group-hover:text-white transition-colors duration-300"><span className="w-1.5 h-1.5 bg-black group-hover:bg-white rounded-full mr-3 shrink-0 transition-colors duration-300"></span>{t.uc2S2}</li>
@@ -161,7 +161,7 @@ export default function BuildTeamsContent({ dict }: { dict: any }) {
                     <p className="text-gray-700">{t.uc3P2}</p>
                   </div>
                   <div className="bg-white group-hover:bg-[#7C4EF6] transition-colors duration-300 rounded-[2rem] p-8 shadow-sm flex flex-col h-full">
-                    <h4 className="font-bold text-black group-hover:text-white transition-colors duration-300 text-right mb-6">{t.servicesMayInclude}</h4>
+                    <h4 className="font-bold text-black group-hover:text-white transition-colors duration-300 text-left mb-6">{t.servicesMayInclude}</h4>
                     <ul className="space-y-3 font-medium flex-grow">
                       <li className="flex items-center text-gray-800 group-hover:text-white transition-colors duration-300"><span className="w-1.5 h-1.5 bg-black group-hover:bg-white rounded-full mr-3 shrink-0 transition-colors duration-300"></span>{t.uc3S1}</li>
                       <li className="flex items-center text-gray-800 group-hover:text-white transition-colors duration-300"><span className="w-1.5 h-1.5 bg-black group-hover:bg-white rounded-full mr-3 shrink-0 transition-colors duration-300"></span>{t.uc3S2}</li>
@@ -188,7 +188,7 @@ export default function BuildTeamsContent({ dict }: { dict: any }) {
                     <p className="text-gray-700">{t.uc4P1}</p>
                   </div>
                   <div className="bg-white group-hover:bg-[#7C4EF6] transition-colors duration-300 rounded-[2rem] p-8 shadow-sm flex flex-col h-full">
-                    <h4 className="font-bold text-black group-hover:text-white transition-colors duration-300 text-right mb-6">{t.servicesMayInclude}</h4>
+                    <h4 className="font-bold text-black group-hover:text-white transition-colors duration-300 text-left mb-6">{t.servicesMayInclude}</h4>
                     <ul className="space-y-3 font-medium flex-grow">
                       <li className="flex items-center text-gray-800 group-hover:text-white transition-colors duration-300"><span className="w-1.5 h-1.5 bg-black group-hover:bg-white rounded-full mr-3 shrink-0 transition-colors duration-300"></span>{t.uc4S1}</li>
                       <li className="flex items-center text-gray-800 group-hover:text-white transition-colors duration-300"><span className="w-1.5 h-1.5 bg-black group-hover:bg-white rounded-full mr-3 shrink-0 transition-colors duration-300"></span>{t.uc4S2}</li>
@@ -215,7 +215,7 @@ export default function BuildTeamsContent({ dict }: { dict: any }) {
                     <p className="text-gray-700">{t.uc5P1}</p>
                   </div>
                   <div className="bg-white group-hover:bg-[#7C4EF6] transition-colors duration-300 rounded-[2rem] p-8 shadow-sm flex flex-col h-full">
-                    <h4 className="font-bold text-black group-hover:text-white transition-colors duration-300 text-right mb-6">{t.servicesMayInclude}</h4>
+                    <h4 className="font-bold text-black group-hover:text-white transition-colors duration-300 text-left mb-6">{t.servicesMayInclude}</h4>
                     <ul className="space-y-3 font-medium flex-grow">
                       <li className="flex items-center text-gray-800 group-hover:text-white transition-colors duration-300"><span className="w-1.5 h-1.5 bg-black group-hover:bg-white rounded-full mr-3 shrink-0 transition-colors duration-300"></span>{t.uc5S1}</li>
                       <li className="flex items-center text-gray-800 group-hover:text-white transition-colors duration-300"><span className="w-1.5 h-1.5 bg-black group-hover:bg-white rounded-full mr-3 shrink-0 transition-colors duration-300"></span>{t.uc5S2}</li>

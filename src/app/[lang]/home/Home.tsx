@@ -65,9 +65,7 @@ export default function HomeContent({ dict, lang }: { dict: any, lang: string })
       <section id="solutions" className="max-w-4xl mx-auto px-8 py-12 text-center relative z-10 group cursor-default">
         <FadeInSection>
           <h2 className="font-raleway font-bold text-[36px] md:text-[43px] leading-none text-black group-hover:text-[#560FF3] transition-colors duration-500 mb-6">{dict.howCanWeHelpTitle}</h2>
-          <p className="text-black text-lg leading-relaxed">
-            {dict.howCanWeHelpDesc}
-          </p>
+          <p className="text-black text-lg leading-relaxed" dangerouslySetInnerHTML={{ __html: dict.howCanWeHelpDesc }} />
         </FadeInSection>
       </section>
 
@@ -152,9 +150,9 @@ export default function HomeContent({ dict, lang }: { dict: any, lang: string })
                 <div className="text-sm text-black leading-relaxed mb-8 hidden md:block text-right">
                   <p className="mb-2 font-bold text-black">{dict.servicesIncluded}</p>
                   <ul className="list-none space-y-1">
-                    <li>{dict.opsService1} •</li>
-                    <li>{dict.opsService2} •</li>
-                    <li>{dict.opsService3} •</li>
+                    <li>{dict.opsService1} </li>
+                    <li>{dict.opsService2} </li>
+                    <li>{dict.opsService3} </li>
                     <li className="pt-2 text-gray-500 italic">{dict.andMore}</li>
                   </ul>
                 </div>
@@ -228,12 +226,8 @@ export default function HomeContent({ dict, lang }: { dict: any, lang: string })
                 <h2 className="font-raleway font-bold text-[36px] md:text-[43px] leading-none mb-6 text-black group-hover:text-[#560FF3] transition-colors duration-500">
                   {dict.onePartnerTitle}
                 </h2>
-                <p className="text-black mb-4 text-lg leading-relaxed">
-                  {dict.onePartnerDesc1}
-                </p>
-                <p className="text-black mb-6 text-lg leading-relaxed">
-                  {dict.onePartnerDesc2}
-                </p>
+                <p className="text-black mb-4 text-lg leading-relaxed" dangerouslySetInnerHTML={{ __html: dict.onePartnerDesc1 }} />
+                <p className="text-black mb-6 text-lg leading-relaxed" dangerouslySetInnerHTML={{ __html: dict.onePartnerDesc2 }} />
                 <Link className="text-black font-semibold underline underline-offset-4 decoration-2 decoration-gray-300 hover:decoration-[#560FF3] group-hover:text-[#560FF3] group-hover:decoration-[#560FF3] transition-colors duration-500 text-lg" href={`/${lang}/about`}>
                   {dict.aboutUsLink}
                 </Link>
@@ -249,35 +243,35 @@ export default function HomeContent({ dict, lang }: { dict: any, lang: string })
               </h2>
             </FadeInSection>
             <div className="grid md:grid-cols-2 lg:grid-cols-4 gap-8">
-            <FadeInSection delay={0.1}>
-              <div className="bg-white p-8 rounded-2xl shadow-sm border border-gray-100 hover:shadow-md transition-all h-full">
-                <div className="text-core-purple font-bold text-4xl mb-4 opacity-50">1</div>
-                <h3 className="font-raleway font-bold text-xl mb-3 text-black">{dict.diff1Title}</h3>
-                <p className="text-black text-sm leading-relaxed">{dict.diff1Desc}</p>
-              </div>
-            </FadeInSection>
-            <FadeInSection delay={0.2}>
-              <div className="bg-white p-8 rounded-2xl shadow-sm border border-gray-100 hover:shadow-md transition-all h-full">
-                <div className="text-core-purple font-bold text-4xl mb-4 opacity-50">2</div>
-                <h3 className="font-raleway font-bold text-xl mb-3 text-black">{dict.diff2Title}</h3>
-                <p className="text-black text-sm leading-relaxed">{dict.diff2Desc}</p>
-              </div>
-            </FadeInSection>
-            <FadeInSection delay={0.3}>
-              <div className="bg-white p-8 rounded-2xl shadow-sm border border-gray-100 hover:shadow-md transition-all h-full">
-                <div className="text-core-purple font-bold text-4xl mb-4 opacity-50">3</div>
-                <h3 className="font-raleway font-bold text-xl mb-3 text-black">{dict.diff3Title}</h3>
-                <p className="text-black text-sm leading-relaxed">{dict.diff3Desc}</p>
-              </div>
-            </FadeInSection>
-            <FadeInSection delay={0.4}>
-              <div className="bg-white p-8 rounded-2xl shadow-sm border border-gray-100 hover:shadow-md transition-all h-full">
-                <div className="text-core-purple font-bold text-4xl mb-4 opacity-50">4</div>
-                <h3 className="font-raleway font-bold text-xl mb-3 text-black">{dict.diff4Title}</h3>
-                <p className="text-black text-sm leading-relaxed">{dict.diff4Desc}</p>
-              </div>
-            </FadeInSection>
-          </div>
+              <FadeInSection delay={0.1}>
+                <div className="bg-white p-8 rounded-2xl shadow-sm border border-gray-100 hover:shadow-md transition-all h-full">
+                  <div className="text-core-purple font-bold text-4xl mb-4 opacity-50">1</div>
+                  <h3 className="font-raleway font-bold text-xl mb-3 text-black">{dict.diff1Title}</h3>
+                  <p className="text-black text-sm leading-relaxed">{dict.diff1Desc}</p>
+                </div>
+              </FadeInSection>
+              <FadeInSection delay={0.2}>
+                <div className="bg-white p-8 rounded-2xl shadow-sm border border-gray-100 hover:shadow-md transition-all h-full">
+                  <div className="text-core-purple font-bold text-4xl mb-4 opacity-50">2</div>
+                  <h3 className="font-raleway font-bold text-xl mb-3 text-black">{dict.diff2Title}</h3>
+                  <p className="text-black text-sm leading-relaxed">{dict.diff2Desc}</p>
+                </div>
+              </FadeInSection>
+              <FadeInSection delay={0.3}>
+                <div className="bg-white p-8 rounded-2xl shadow-sm border border-gray-100 hover:shadow-md transition-all h-full">
+                  <div className="text-core-purple font-bold text-4xl mb-4 opacity-50">3</div>
+                  <h3 className="font-raleway font-bold text-xl mb-3 text-black">{dict.diff3Title}</h3>
+                  <p className="text-black text-sm leading-relaxed">{dict.diff3Desc}</p>
+                </div>
+              </FadeInSection>
+              <FadeInSection delay={0.4}>
+                <div className="bg-white p-8 rounded-2xl shadow-sm border border-gray-100 hover:shadow-md transition-all h-full">
+                  <div className="text-core-purple font-bold text-4xl mb-4 opacity-50">4</div>
+                  <h3 className="font-raleway font-bold text-xl mb-3 text-black">{dict.diff4Title}</h3>
+                  <p className="text-black text-sm leading-relaxed">{dict.diff4Desc}</p>
+                </div>
+              </FadeInSection>
+            </div>
           </div>
 
         </div>
@@ -287,9 +281,7 @@ export default function HomeContent({ dict, lang }: { dict: any, lang: string })
       <section className="max-w-[1600px] mx-auto px-8 py-20 relative z-10 flex flex-col md:flex-row items-center gap-16 group cursor-default">
         <FadeInSection className="w-full md:w-1/2">
           <h2 className="font-raleway font-bold text-[36px] md:text-[43px] leading-none text-black group-hover:text-[#560FF3] transition-colors duration-500 mb-6">{dict.painTitle}</h2>
-          <p className="text-black text-lg leading-relaxed mb-6">
-            {dict.painDesc1}
-          </p>
+          <p className="text-black text-lg leading-relaxed mb-6" dangerouslySetInnerHTML={{ __html: dict.painDesc1 }} />
           <p className="text-core-purple font-bold text-xl mb-10">
             {dict.painDesc2}
           </p>
