@@ -307,5 +307,49 @@ export const es = {
     runOpsSub: "Opera tu Negocio",
     runOpsDesc: "Liberamos a tus líderes de la carga administrativa del back office. Con CoreBooks y nuestro soporte financiero avanzado, centralizamos los flujos de trabajo de contabilidad, el procesamiento de nómina y la gestión de pagos a contratistas internacionales en una estructura única y perfecta.",
     footerBanner: "Con sede en México, nos convertimos en el único socio integral que unifica personas, procesos y ejecución continua. Asumimos la propiedad de la estructura operativa diaria para que puedas enfocarte al 100% en las ventas, los clientes y en expandir tu negocio."
+  },
+  contactPage: {
+    title: "Contáctanos",
+    helpText1: "para ayudarte a encontrar la estructura adecuada",
+    helpText2: "para crecer",
+    helpText3: "sin tener que hacerlo todo internamente.",
+    fillDetails: "Llena tus datos y nos pondremos en contacto en breve.",
+    firstName: "Nombre",
+    lastName: "Apellido",
+    jobTitle: "Puesto de trabajo",
+    company: "Empresa",
+    email: "Correo electrónico",
+    phone: "Número de teléfono",
+    service: "¿Qué servicio necesitas?",
+    message: "Mensaje",
+    send: "ENVIAR",
+    select: "Seleccionar",
+    placeholderMessage: "Déjanos saber tus preguntas y qué necesitas.",
+    servicesOptions: {
+      buildTeam: "Arma tu Equipo",
+      runOps: "Opera tu Negocio",
+      recruitment: "Reclutamiento y Selección",
+      staffing: "Staffing",
+      eor: "Employer of Record",
+      staffAugmentation: "Staff Augmentation",
+      employmentVisa: "Servicios de Visa de Empleo",
+      hiringSupport: "Contratación, onboarding y gestión continua",
+      bookkeeping: "Contabilidad (Bookkeeping)",
+      payroll: "Servicios de Nómina",
+      contractor: "Pagos a Contratistas",
+      bpo: "BPO / Soporte de Back-Office",
+      administrative: "Soporte Administrativo",
+      finance: "Soporte Financiero",
+      other: "Otro"
+    },
+    validation: {
+      onlyLetters: "Solo se permiten letras y espacios",
+      onlyNumbers: "Solo se permiten números",
+      noSymbols: "No se permiten símbolos",
+      invalidEmail: "Por favor, ingresa un correo electrónico válido"
+    },
+    successTitle: "¡Gracias!",
+    successText: "Hemos recibido tu mensaje. Nos pondremos en contacto pronto.",
+    backButton: "VOLVER"
   }
 };

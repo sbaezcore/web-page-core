@@ -22,3 +22,16 @@ model ClientLead {
   message     String?
   createdAt   DateTime @default(now())
 }
+
+model ContactForm {
+  id          Int      @id @default(autoincrement())
+  firstName   String
+  lastName    String
+  jobTitle    String
+  companyName String
+  email       String
+  phone       String?
+  service     String
+  message     String?
+  createdAt   DateTime @default(now())
+}

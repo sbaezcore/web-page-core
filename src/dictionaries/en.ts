@@ -307,5 +307,49 @@ export const en = {
     runOpsSub: "Run Your Operations",
     runOpsDesc: "We free your leaders from the administrative burden of the back office. With CoreBooks and our advanced financial support, we centralize bookkeeping workflows, payroll processing, and international contractor payment management into a single, seamless structure.",
     footerBanner: "With headquarters in Mexico, we become the single comprehensive partner unifying people, processes, and continuous execution. We take ownership of the day-to-day operational structure so you can focus 100% on sales, clients, and expanding your business."
+  },
+  contactPage: {
+    title: "Contact us",
+    helpText1: "to help you find the right structure",
+    helpText2: "to grow",
+    helpText3: "without having to do it all in-house.",
+    fillDetails: "Fill out your details and we'll be in touch shortly.",
+    firstName: "First Name",
+    lastName: "Last Name",
+    jobTitle: "Job Title",
+    company: "Company",
+    email: "Email",
+    phone: "Phone Number",
+    service: "What service do you need?",
+    message: "Message",
+    send: "SEND",
+    select: "Select",
+    placeholderMessage: "Let us know your questions and what you need.",
+    servicesOptions: {
+      buildTeam: "Build Your Team",
+      runOps: "Run Your Operations",
+      recruitment: "Recruitment & Selection",
+      staffing: "Staffing",
+      eor: "Employer of Record",
+      staffAugmentation: "Staff Augmentation",
+      employmentVisa: "Employment Visa Services",
+      hiringSupport: "Hiring, onboarding and ongoing support",
+      bookkeeping: "Bookkeeping",
+      payroll: "Payroll Services",
+      contractor: "Contractor Payments",
+      bpo: "BPO / Back-Office Support",
+      administrative: "Administrative Support",
+      finance: "Finance Support",
+      other: "Other"
+    },
+    validation: {
+      onlyLetters: "Only letters and spaces are allowed",
+      onlyNumbers: "Only numbers are allowed",
+      noSymbols: "No symbols are allowed",
+      invalidEmail: "Please enter a valid email address"
+    },
+    successTitle: "Thank you!",
+    successText: "We have received your message. We will get in touch with you shortly.",
+    backButton: "BACK"
   }
 };
