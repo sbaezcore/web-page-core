@@ -27,6 +27,9 @@ export async function generateMetadata(props: { params: Promise<{ lang: string }
   return {
     title: lang === 'es' ? "Core Resources | Soluciones de Talento y BPO" : "Core Resources",
     description: lang === 'es' ? "Soluciones de Talento y Servicios BPO para Empresas de EE. UU." : "Talent Solutions & BPO Services for U.S. Companies",
+    icons: {
+      icon: '/images/favicon.png',
+    },
   };
 }
 
