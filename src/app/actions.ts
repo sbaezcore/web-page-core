@@ -88,7 +88,7 @@ export async function submitContact(formData: FormData) {
 
   const mailOptions = {
     from: `"The Core Resources Web" <${process.env.EMAIL_SEND}>`,
-    to: "contact@thecoreresources.com, florencia.figueroa@thecoreresources.com, mariana.palavecino@thecoreresources.com, sergio.baez@thecoreresources.com",
+    to: "contact@thecoreresources.com, florencia.figueroa@thecoreresources.com, mariana.palavecino@thecoreresources.com",
     subject: `Nuevo Lead Registrado: ${firstName} ${lastName} - ${service}`,
     html: htmlContent,
   };
