@@ -136,7 +136,7 @@ export default function FAQContent({ dict, lang }: { dict: any, lang: string }) 
                     {section.ctaLink}
                   </Link>
                   <Link href={`/${lang}/contact`}>
-                    <button className="bg-[#00c29a] text-white font-bold py-2.5 px-8 rounded hover:bg-[#00a885] transition-colors text-sm">
+                    <button className="bg-gradient-to-b from-[#005A4D] to-[#00B49A] hover:from-[#005A4D]/90 hover:to-[#00B49A]/90 text-white font-semibold py-2.5 px-8 rounded-lg text-sm hover:opacity-90 hover:scale-105 transform transition-all duration-300 shadow-md">
                       {section.ctaBtn}
                     </button>
                   </Link>
