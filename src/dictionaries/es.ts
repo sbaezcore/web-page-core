@@ -290,8 +290,7 @@ export const es = {
       s6Best: "Ideal para:",
       s6BestDesc: "Empresas que necesitan más estructura en sus operaciones financieras sin contratar un equipo interno completo."
     }
-  }
-,
+  },
   about: {
     aboutCoreResources: "Sobre Core Resources",
     heroTitle1: "Core Resources se fundó con una misión clara:",
@@ -351,5 +350,45 @@ export const es = {
     successTitle: "¡Gracias!",
     successText: "Hemos recibido tu mensaje. Nos pondremos en contacto pronto.",
     backButton: "VOLVER"
+  },
+  navFaq: "FAQ",
+  faq: {
+    title: "Preguntas Frecuentes",
+    buildYourTeam: {
+      title: "Construye tu Equipo",
+      q1: "1. ¿Core solo ayuda a las empresas a contratar en México?",
+      a1: "No. Core tiene sede en México, pero ayudamos a empresas estadounidenses a acceder a talento en toda América Latina y otros mercados globales donde la contratación puede ser más rentable e igualmente o más efectiva que contratar solo en los EE. UU.",
+      q2: "2. ¿Cuál es la diferencia entre reclutamiento y staffing?",
+      a2: "El reclutamiento se usa típicamente cuando una empresa necesita encontrar y seleccionar talento para un rol a largo plazo o permanente. El staffing se usa a menudo para roles temporales, basados en proyectos o flexibles donde la empresa necesita capacidad sin un compromiso a largo plazo.",
+      q3: "3. ¿Qué significa Employer of Record (EOR)?",
+      a3: "Un Employer of Record ayuda a las empresas a contratar talento en otro país sin abrir una entidad local. En términos simples, le brinda a su empresa una forma compatible de emplear talento internacional al tiempo que reduce la complejidad legal y administrativa.",
+      q4: "4. ¿Puede Core ayudar con el talento basado en proyectos?",
+      a4: "Sí. Core puede ayudar a las empresas a cubrir roles especializados, temporales o basados en proyectos a través de staffing o staff augmentation, según el nivel de soporte e integración necesario.",
+      q5: "5. ¿Puede Core ayudar con las visas de empleo en México?",
+      a5: "Sí. Core apoya los procesos de visas relacionados con el empleo en México, incluido el soporte de documentación, la coordinación administrativa y la orientación del proceso cuando corresponda.",
+      ctaTitle: "¿Listo para construir el equipo que tu negocio necesita?",
+      ctaDesc: "Cuéntanos qué rol, equipo o desafío de contratación estás tratando de resolver. Core puede ayudarte a encontrar la solución de talento adecuada y estructurarla de una manera que respalde tu crecimiento.",
+      ctaLink: "Ver Soluciones de Reclutamiento",
+      ctaBtn: "Agendar una Llamada"
+    },
+    runYourOperations: {
+      title: "Ejecuta tus Operaciones",
+      q1: "1. ¿Run Your Operations es un servicio de staffing?",
+      a1: "No. Build Your Team es la vertical de talento de Core. Run Your Operations se centra en operaciones externalizadas y soporte BPO. El objetivo no es solo proporcionar personas, sino ayudar a gestionar tareas operativas recurrentes y generar resultados comerciales.",
+      q2: "2. ¿Qué tipos de tareas puede ayudar a gestionar Core?",
+      a2: "Core puede apoyar la contabilidad, la nómina, los pagos a contratistas, el trabajo administrativo, el soporte financiero, las tareas administrativas de back-office y los procesos operativos recurrentes.",
+      q3: "3. ¿Necesitamos contratar a un equipo interno completo para organizar nuestras operaciones?",
+      a3: "No siempre. Muchas empresas pueden reducir la carga de trabajo y mejorar la estructura externalizando procesos específicos en lugar de construir un departamento interno completo de administración, finanzas o back-office.",
+      q4: "4. ¿Puede Core ayudar si nuestros registros financieros o de contabilidad están desorganizados?",
+      a4: "Sí. A través de CoreBooks y el soporte financiero, Core puede ayudar a organizar la contabilidad, los registros financieros, los flujos de trabajo recurrentes y el soporte de informes.",
+      q5: "5. ¿Esto es solo para grandes empresas?",
+      a5: "No. Run Your Operations es especialmente útil para empresas en crecimiento, operadores de pequeñas empresas y empresas del mercado medio que necesitan más estructura, capacidad y control operativo sin gastos generales innecesarios.",
+      ctaTitle: "¿Listo para quitarte el trabajo operativo de encima?",
+      ctaDesc: "Cuéntanos qué está consumiendo tiempo, creando desorden o ralentizando a tu equipo. Core puede ayudarte a identificar qué procesos operativos delegar y cómo estructurar el modelo de soporte adecuado.",
+      ctaLink: "Ver Soluciones Operativas",
+      ctaBtn: "Agendar una Llamada"
+    },
+    stillHaveQuestions: "¿Aún tienes preguntas? Estamos aquí para ayudar.",
+    contactUsBtn: "CONTÁCTANOS"
   }
 };

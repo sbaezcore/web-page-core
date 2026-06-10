@@ -290,8 +290,7 @@ export const en = {
       s6Best: "Best for:",
       s6BestDesc: "Companies that need more structure in their finance operations without hiring a full in-house team."
     }
-  }
-,
+  },
   about: {
     aboutCoreResources: "About Core Resources",
     heroTitle1: "Core Resources was founded with a clear mission:",
@@ -351,5 +350,45 @@ export const en = {
     successTitle: "Thank you!",
     successText: "We have received your message. We will get in touch with you shortly.",
     backButton: "BACK"
+  },
+  navFaq: "FAQ",
+  faq: {
+    title: "FAQ",
+    buildYourTeam: {
+      title: "Build Your Team",
+      q1: "1. Does Core only help companies hire in Mexico?",
+      a1: "No. Core is based in Mexico, but we help U.S. companies access talent across Latin America and other global markets where hiring can be more cost-efficient and equally or more effective than hiring only in the U.S.",
+      q2: "2. What is the difference between recruitment and staffing?",
+      a2: "Recruitment is typically used when a company needs to find and select talent for a long-term or permanent role. Staffing is often used for temporary, project-based or flexible roles where the company needs capacity without a long-term commitment.",
+      q3: "3. What does Employer of Record mean?",
+      a3: "An Employer of Record helps companies hire talent in another country without opening a local entity. In simple terms, it gives your company a compliant way to employ international talent while reducing legal and administrative complexity.",
+      q4: "4. Can Core help with project-based talent?",
+      a4: "Yes. Core can help companies cover project-based, temporary or specialized roles through staffing or staff augmentation, depending on the level of support and integration needed.",
+      q5: "5. Can Core help with employment visas in Mexico?",
+      a5: "Yes. Core supports employment-related visa processes in Mexico, including documentation support, administrative coordination and process guidance when applicable.",
+      ctaTitle: "Ready to build the team your business needs?",
+      ctaDesc: "Tell us what role, team or hiring challenge you are trying to solve. Core can help you find the right talent solution and structure it in a way that supports your growth.",
+      ctaLink: "See Recruitment Solutions",
+      ctaBtn: "Book a Call"
+    },
+    runYourOperations: {
+      title: "Run Your Operations",
+      q1: "1. Is Run Your Operations a staffing service?",
+      a1: "No. Build Your Team is Core's talent vertical. Run Your Operations is focused on outsourced operations and BPO support. The goal is not only to provide people, but to help manage recurring operational tasks and deliver business outcomes.",
+      q2: "2. What types of tasks can Core help manage?",
+      a2: "Core can support bookkeeping, payroll, contractor payments, administrative work, finance support, back-office tasks and recurring operational processes.",
+      q3: "3. Do we need to hire a full internal team to organize our operations?",
+      a3: "Not always. Many companies can reduce workload and improve structure by outsourcing specific processes instead of building a full internal admin, finance or back-office department.",
+      q4: "4. Can Core help if our financial records or bookkeeping are disorganized?",
+      a4: "Yes. Through CoreBooks and finance support, Core can help organize bookkeeping, financial records, recurring workflows and reporting support.",
+      q5: "5. Is this only for large companies?",
+      a5: "No. Run Your Operations is especially useful for growing companies, small business operators and mid-market companies that need more structure, capacity and operational control without unnecessary overhead.",
+      ctaTitle: "Ready to take operational work off your plate?",
+      ctaDesc: "Tell us what is consuming time, creating disorder or slowing down your team. Core can help you identify which operational processes to delegate and how to structure the right support model.",
+      ctaLink: "See Operational Solutions",
+      ctaBtn: "Book a Call"
+    },
+    stillHaveQuestions: "Still have questions? We're here to help.",
+    contactUsBtn: "CONTACT US"
   }
 };
