@@ -111,20 +111,20 @@ export default function ContactContent({ dict }: { dict: any }) {
 
       <div className="w-full max-w-7xl relative z-10">
         {/* Header section outside card */}
-        <div className="flex flex-col md:flex-row mb-8 w-full">
+        <div className="flex flex-col-reverse md:flex-row mb-6 md:mb-8 w-full">
           {/* Title above left column */}
-          <div className="w-full md:w-5/12 flex items-center justify-start">
-            <h1 className="text-[#6225E6] text-3xl md:text-4xl font-bold">{dict.title}</h1>
+          <div className="w-full md:w-5/12 flex items-center justify-center md:justify-start mt-4 md:mt-0">
+            <h1 className="text-[#6225E6] text-3xl md:text-4xl font-bold text-center md:text-left">{dict.title}</h1>
           </div>
           {/* Icon above right column */}
-          <div className="w-full md:w-7/12 flex items-center justify-center hidden md:flex pb-6">
+          <div className="w-full md:w-7/12 flex items-center justify-center pb-0 md:pb-6">
              <svg width="0" height="0">
                <linearGradient id="envelopeGradient" x1="0%" y1="0%" x2="100%" y2="0%">
                  <stop offset="0%" stopColor="#b392f0" />
                  <stop offset="100%" stopColor="#6225E6" />
                </linearGradient>
              </svg>
-             <Mail stroke="url(#envelopeGradient)" size={120} strokeWidth={2.5} />
+             <Mail stroke="url(#envelopeGradient)" strokeWidth={2.5} className="w-24 h-24 md:w-[120px] md:h-[120px]" />
           </div>
         </div>
 
@@ -146,15 +146,15 @@ export default function ContactContent({ dict }: { dict: any }) {
             <h2 className="text-[#6225E6] text-2xl font-bold mb-1">{dict.title}</h2>
             <p className="text-gray-800 text-lg font-semibold mb-1">{dict.helpText1}</p>
             <p className="text-[#7C4EF6] text-lg font-bold mb-1">{dict.helpText2}</p>
-            <p className="text-gray-800 text-lg font-semibold mb-6">{dict.helpText3}</p>
+            <p className="text-gray-800 text-lg font-semibold mb-4">{dict.helpText3}</p>
             
-            <div className="w-full h-px bg-gray-300 my-4"></div>
+            <div className="w-16 h-[2px] bg-gray-200 my-4 mx-auto"></div>
             
-            <p className="text-gray-500 text-sm mb-8">{dict.fillDetails}</p>
+            <p className="text-gray-500 text-sm mb-6">{dict.fillDetails}</p>
             
-            <div className="flex space-x-4">
+            <div className="flex justify-center space-x-4 w-full">
               <a href="https://www.linkedin.com/company/core-resources" target="_blank" rel="noopener noreferrer" className="text-black hover:text-[#6225E6] transition-colors">
-                <FiLinkedin size={24} />
+                <FiLinkedin size={28} />
               </a>
             </div>
           </div>
