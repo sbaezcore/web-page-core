@@ -13,15 +13,13 @@ export default function FAQContent({ dict, lang }: { dict: any, lang: string }) 
     const isOpening = openSection !== section;
     setOpenSection(isOpening ? section : null);
     
-    if (isOpening) {
-      setTimeout(() => {
-        const element = document.getElementById(`faq-section-${section}`);
-        if (element) {
-          const y = element.getBoundingClientRect().top + window.scrollY - 120;
-          window.scrollTo({ top: y, behavior: 'smooth' });
-        }
-      }, 50);
-    }
+    setTimeout(() => {
+      const element = document.getElementById(`faq-section-${section}`);
+      if (element) {
+        const y = element.getBoundingClientRect().top + window.scrollY - 120;
+        window.scrollTo({ top: y, behavior: 'smooth' });
+      }
+    }, 50);
   };
 
   const faqData = [
@@ -94,22 +92,25 @@ export default function FAQContent({ dict, lang }: { dict: any, lang: string }) 
       <section className="relative z-10 w-full px-6 xl:px-8 max-w-6xl mx-auto pb-16 flex-grow">
         {faqData.map((section) => (
           <div key={section.id} id={`faq-section-${section.id}`} className="mb-8">
-            {openSection !== section.id && (
-              <button 
-                onClick={() => toggleSection(section.id)}
-                className="w-full flex items-center justify-between py-4 text-left group"
-              >
-                <div className="flex items-center w-full">
-                  <h2 className="text-[#560FF3] text-2xl md:text-3xl lg:text-[36px] font-bold whitespace-nowrap leading-tight">{section.title}</h2>
-                  <div className="h-px bg-gray-400 mx-4 flex-grow transition-colors group-hover:bg-[#560FF3]"></div>
-                </div>
-                <ChevronDown className="text-gray-600 group-hover:text-[#560FF3] flex-shrink-0" />
-              </button>
-            )}
+            <div className={`grid transition-all duration-500 ease-in-out ${openSection === section.id ? 'grid-rows-[0fr] opacity-0' : 'grid-rows-[1fr] opacity-100'}`}>
+              <div className="overflow-hidden">
+                <button 
+                  onClick={() => toggleSection(section.id)}
+                  className="w-full flex items-center justify-between py-4 text-left group"
+                >
+                  <div className="flex items-center w-full">
+                    <h2 className="text-[#560FF3] text-2xl md:text-3xl lg:text-[36px] font-bold whitespace-nowrap leading-tight">{section.title}</h2>
+                    <div className="h-px bg-gray-400 mx-4 flex-grow transition-colors group-hover:bg-[#560FF3]"></div>
+                  </div>
+                  <ChevronDown className="text-gray-600 group-hover:text-[#560FF3] flex-shrink-0" />
+                </button>
+              </div>
+            </div>
 
             {/* Expanded Content */}
-            {openSection === section.id && (
-              <div className="bg-[#333333] text-white rounded-xl overflow-hidden shadow-2xl transition-all duration-500 ease-in-out">
+            <div className={`grid transition-all duration-500 ease-in-out ${openSection === section.id ? 'grid-rows-[1fr] opacity-100 mt-2' : 'grid-rows-[0fr] opacity-0 mt-0'}`}>
+              <div className="overflow-hidden">
+                <div className="bg-[#333333] text-white rounded-xl overflow-hidden shadow-2xl">
                 <div className="p-8 md:p-12 space-y-8">
                   {/* Top Bar matching design inside accordion */}
                   <div className="flex items-center justify-between pb-4">
@@ -141,8 +142,19 @@ export default function FAQContent({ dict, lang }: { dict: any, lang: string }) 
                     </button>
                   </Link>
                 </div>
+
+                {/* Bottom Close Ribbon */}
+                <button 
+                  onClick={() => toggleSection(section.id)}
+                  className="w-full bg-[#333333] hover:bg-[#444444] transition-colors py-4 flex items-center justify-center group focus:outline-none"
+                >
+                  <div className="h-px bg-gray-500 flex-grow ml-8 md:ml-12 transition-colors group-hover:bg-gray-400"></div>
+                  <ChevronUp className="text-white mx-6 flex-shrink-0" size={24} />
+                  <div className="h-px bg-gray-500 flex-grow mr-8 md:mr-12 transition-colors group-hover:bg-gray-400"></div>
+                </button>
               </div>
-            )}
+            </div>
+          </div>
           </div>
         ))}
       </section>
