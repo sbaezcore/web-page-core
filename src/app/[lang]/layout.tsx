@@ -1,5 +1,6 @@
 import type { Metadata } from "next";
 import { Inter, Raleway } from 'next/font/google';
+import Script from 'next/script';
 import "../globals.css";
 import Navbar from '../../components/Navbar';
 import Footer from '../../components/Footer';
@@ -49,6 +50,16 @@ export default async function RootLayout(props: {
         <Navbar dict={dict.nav} lang={lang} />
         {props.children}
         <Footer dict={dict.footer} lang={lang} />
+        <Script strategy="afterInteractive" src="https://www.googletagmanager.com/gtag/js?id=G-H0BBLFHBLQ" />
+        <Script id="google-analytics" strategy="afterInteractive" dangerouslySetInnerHTML={{
+          __html: `
+            window.dataLayer = window.dataLayer || [];
+            function gtag(){dataLayer.push(arguments);}
+            gtag('js', new Date());
+
+            gtag('config', 'G-H0BBLFHBLQ');
+          `
+        }} />
       </body>
     </html>
   );
