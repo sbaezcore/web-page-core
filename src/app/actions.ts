@@ -99,5 +99,26 @@ export async function submitContact(formData: FormData) {
     console.error("Error al enviar el correo:", error);
   }
 
+  try {
+    await fetch(`${process.env.URL_N8N_PIPEDRIVE_FLOW}`, {
+      method: "POST",
+      headers: {
+        "Content-Type": "application/json",
+      },
+      body: JSON.stringify({
+        firstName,
+        lastName,
+        jobTitle,
+        companyName,
+        email,
+        phone: phone || null,
+        service,
+        message: message || null,
+      }),
+    });
+  } catch (error) {
+    console.error("Error al enviar al webhook de n8n:", error);
+  }
+
   return { success: true };
 }
